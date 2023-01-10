@@ -8,6 +8,7 @@ import Base from "../pages/Base/index";
 import Toppings from "../pages/Toppings";
 import Orders from "../pages/Oders";
 import { Backdrop } from "../components/BackDrop";
+import FooterComponent from "../components/Footer";
 
 const AppRouter = () => {
   const location = useLocation();
@@ -32,6 +33,7 @@ const AppRouter = () => {
       <Header />
       {/* <Modal showModal={showModal} setShowModal={setShowModal} /> */}
       <Backdrop showModal={showModal} setShowModal={setShowModal} />
+
       <AnimatePresence mode="wait" onExitComplete={() => setShowModal(false)}>
         <Routes location={location} key={location.key}>
           <Route path="/" element={<HomePage />} />
@@ -50,6 +52,8 @@ const AppRouter = () => {
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </AnimatePresence>
+
+      <FooterComponent />
     </>
   );
 };

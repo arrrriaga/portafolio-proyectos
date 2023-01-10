@@ -141,3 +141,9 @@ li span.active::before {
   color: #444;
   font-weight: bold;
 }
+
+.FooterContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
