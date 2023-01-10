@@ -60,6 +60,7 @@ const Home = () => {
           Welcome to my Portfolio
         </motion.h2>
         <motion.div
+          className="d-flex justify-content-center"
           transition={{ duration: 2.5 }}
           animate={{
             scale: [0, 1, 1, 1, 1.5],
