@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
 const containerVariants = {
@@ -11,6 +11,7 @@ const containerVariants = {
     x: 0,
     y: [180, 180, 0],
     transition: {
+      // delay: 0.3,
       duration: 2,
       type: `spring`,
       mass: 0.4,
@@ -31,7 +32,13 @@ const childVariants = {
     opacity: 1,
   },
 };
-const Order = ({ pizza }) => {
+const Order = ({ pizza, setShowModal }) => {
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setShowModal(true);
+  //   }, 5000);
+  // }, [setShowModal]);
+
   return (
     <motion.div
       className="container order"
@@ -48,6 +55,13 @@ const Order = ({ pizza }) => {
           <div key={topping}>{topping}</div>
         ))}
       </motion.div>
+      <button
+        onClick={() => {
+          setShowModal(true);
+        }}
+      >
+        MODAL
+      </button>
     </motion.div>
   );
 };

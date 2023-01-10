@@ -1,30 +1,34 @@
 import React from "react";
 import { motion } from "framer-motion";
+import profile from "../../images/profile.jpg";
 
 const Header = () => {
   return (
-    <motion.header
-      transition={{ delay: 2, duration: 2 }}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-    >
-      <div className="logo">
-        <svg
-          className="pizza-svg"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 100 100"
-        >
-          <path
-            fill="none"
-            d="M40 40 L80 40 C80 40 80 80 40 80 C40 80 0 80 0 40 C0 40 0 0 40 0Z"
-          />
-          <path fill="none" d="M50 30 L50 -10 C50 -10 90 -10 90 30 Z" />
-        </svg>
-      </div>
-      <motion.div className="title">
+    <header>
+      <motion.div
+        className="logo"
+        animate={{
+          x: [3000, 0],
+          y: [-50, -20, 0],
+          rotate: [500, 0],
+          transition: { type: `spring`, delay: 2, duration: 4 },
+        }}
+      >
+        <motion.img
+          className="profileP"
+          src={profile}
+          alt="PROFILE"
+        ></motion.img>
+      </motion.div>
+      <motion.div
+        className="title"
+        transition={{ delay: 2, duration: 2 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
         <h1>Francisco Arriaga Velasco</h1>
       </motion.div>
-    </motion.header>
+    </header>
   );
 };
 

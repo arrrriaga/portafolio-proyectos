@@ -1,6 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+const buttonVariants = {
+  hover: {
+    scale: 1.1,
+    x: 0,
+    textShadow: "0px 0px 8px rgb(255,255,255)",
+    boxShadow: "0px 0px 10px rgb(255,255,255)",
+    transition: {
+      duration: 0.6,
+      repeat: Infinity,
+      repeatType: "reverse",
+    },
+  },
+};
 
 const containerVariants = {
   hidden: {
@@ -10,8 +23,13 @@ const containerVariants = {
     opacity: 1,
     x: 0,
     transition: {
+      // delay: 0.3,
       type: `spring`,
     },
+  },
+  exit: {
+    x: "-100vw",
+    transition: "easeInOut",
   },
 };
 
@@ -33,6 +51,7 @@ const Base = ({ addBase, pizza }) => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
+      exit="exit"
     >
       <h3>Step 1: Choose Your Base</h3>
       <ul>
@@ -59,13 +78,7 @@ const Base = ({ addBase, pizza }) => {
           animate="visible"
         >
           <Link to="/toppings">
-            <motion.button
-              whileHover={{
-                scale: 1.1,
-                textShadow: "0px 0px 8px rgb(255,255,255)",
-                boxShadow: "0px 0px 8px rgb(255,255,255)",
-              }}
-            >
+            <motion.button variants={buttonVariants} whileHover="hover">
               Next
             </motion.button>
           </Link>
