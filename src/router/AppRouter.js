@@ -7,6 +7,7 @@ import HomePage from "../pages/home";
 import Base from "../pages/Base/index";
 import Toppings from "../pages/Toppings";
 import Orders from "../pages/Oders";
+import { Backdrop } from "../components/BackDrop";
 
 const AppRouter = () => {
   const location = useLocation();
@@ -29,7 +30,8 @@ const AppRouter = () => {
   return (
     <>
       <Header />
-      <Modal showModal={showModal} setShowModal={setShowModal} />
+      {/* <Modal showModal={showModal} setShowModal={setShowModal} /> */}
+      <Backdrop showModal={showModal} setShowModal={setShowModal} />
       <AnimatePresence mode="wait" onExitComplete={() => setShowModal(false)}>
         <Routes location={location} key={location.key}>
           <Route path="/" element={<HomePage />} />

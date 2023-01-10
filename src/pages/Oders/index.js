@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 const containerVariants = {
   hidden: {
     x: "100vw",
-    y: 180,
+    opacity: 0,
   },
   visible: {
     opacity: 1,
     x: 0,
-    y: [180, 180, 0],
+
     transition: {
       // delay: 0.3,
       duration: 2,

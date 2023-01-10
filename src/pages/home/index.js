@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Container, Row } from "react-bootstrap";
 
 const buttonVariants = {
   visible: {
@@ -43,45 +44,47 @@ const containerVariants = {
 
 const Home = () => {
   return (
-    <div className="home container">
-      <motion.h2
-        transition={{ duration: 2.5 }}
-        animate={{
-          scale: [0, 0, 1, 2, 2],
-          opacity: [0, 1],
-          y: [-1000, -1000, 400, 200],
-          color: "#ffff",
-        }}
-        variants={containerVariants}
-        exit="exit"
-      >
-        Welcome to my Portfolio
-      </motion.h2>
-      <motion.div
-        transition={{ duration: 2.5 }}
-        animate={{
-          scale: [0, 1, 1, 1, 1.5],
-          y: [200, 200, 200, 0],
-        }}
-      >
-        <Link to="/base">
-          <motion.button
-            variants={buttonVariants}
-            animate="visible"
-            whileHover="hover"
-            exit={{
-              x: [0, 0, -3000],
-              transition: {
-                duration: 0.8,
-                delay: 0.38,
-              },
-            }}
-          >
-            Start
-          </motion.button>
-        </Link>
-      </motion.div>
-    </div>
+    <Container className="home container">
+      <Row>
+        <motion.h2
+          transition={{ duration: 2.5 }}
+          animate={{
+            scale: [0, 0, 1, 2, 2],
+            opacity: [0, 1],
+            y: [-1000, -1000, 400, 200],
+            color: "#ffff",
+          }}
+          variants={containerVariants}
+          exit="exit"
+        >
+          Welcome to my Portfolio
+        </motion.h2>
+        <motion.div
+          transition={{ duration: 2.5 }}
+          animate={{
+            scale: [0, 1, 1, 1, 1.5],
+            y: [200, 200, 200, 0],
+          }}
+        >
+          <Link to="/base">
+            <motion.button
+              variants={buttonVariants}
+              animate="visible"
+              whileHover="hover"
+              exit={{
+                x: [0, 0, -3000],
+                transition: {
+                  duration: 0.8,
+                  delay: 0.38,
+                },
+              }}
+            >
+              Start
+            </motion.button>
+          </Link>
+        </motion.div>
+      </Row>
+    </Container>
   );
 };
 
