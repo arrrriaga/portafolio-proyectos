@@ -1,6 +1,6 @@
 import React from "react";
 import { Modal } from "../Modal";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 const backDrop = {
@@ -9,18 +9,6 @@ const backDrop = {
   },
   hidden: {
     opacity: 0,
-  },
-};
-
-const modal = {
-  hidden: {
-    y: "-100vh",
-    opacity: 0,
-  },
-  visible: {
-    y: "200px",
-    opacity: 1,
-    transition: {},
   },
 };
 

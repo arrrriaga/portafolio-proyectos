@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import Header from "../components/Header";
-import { Modal } from "../components/Modal/index";
+
 import { AnimatePresence } from "framer-motion";
 import HomePage from "../pages/home";
 import Base from "../pages/Base/index";
