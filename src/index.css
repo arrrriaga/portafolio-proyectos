@@ -109,7 +109,7 @@ li span.active::before {
 /* components */
 .backdrop {
   background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -120,7 +120,6 @@ li span.active::before {
   max-width: 80vw;
   max-height: 60vh;
   position: absolute;
-
   top: 0;
   left: 0;
   right: 0;

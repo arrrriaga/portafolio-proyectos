@@ -9,7 +9,7 @@ const Modal = ({ showModal, setShowModal }) => {
       opacity: 0,
     },
     visible: {
-      y: "200px",
+      y: "15vh",
       opacity: 1,
       transition: {},
     },
