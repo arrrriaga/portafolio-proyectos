@@ -4,6 +4,10 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
 
+const listItem = {
+  hover: { scale: 1.1, originX: 0, color: "#4c687f" },
+  visible: { type: "spring", stiffness: 300 },
+};
 const buttonVariants = {
   hover: {
     scale: 1.1,
@@ -56,7 +60,7 @@ const Toppings = ({ addTopping, portafolioa }) => {
       <div className="container">
         <Row className="RowTitle ">
           <Col className="d-flex justify-content-center align-items-center">
-            <h3>Step 2: Choose Toppings</h3>
+            <h3 style={{ color: "#4c687f" }}>PROJECTS PORTFOLIO</h3>
           </Col>
         </Row>
         <Row className="RowBase d-flex justify-content-center">
@@ -71,8 +75,9 @@ const Toppings = ({ addTopping, portafolioa }) => {
                   <motion.li
                     key={topping}
                     onClick={() => addTopping(topping)}
-                    whileHover={{ scale: 1.3, originX: 0, color: "#f8e112" }}
-                    transition={{ type: "spring", stiffness: 300 }}
+                    variants={listItem}
+                    whileHover="hover"
+                    transition="visible"
                   >
                     <span className={spanClass}>{topping}</span>
                   </motion.li>
