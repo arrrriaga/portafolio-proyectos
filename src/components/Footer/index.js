@@ -1,9 +1,27 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Col, Container, Row } from "react-bootstrap";
 
 const FooterComponent = () => {
+  const containerVariants = {
+    hidden: {
+      y: "100vw",
+    },
+    visible: {
+      y: 0,
+      transition: {
+        delay: 1.5,
+        duration: 3,
+        type: `spring`,
+      },
+    },
+  };
   return (
-    <footer>
+    <motion.footer
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <Container fluid className="FooterContainer text-center py-3">
         <Row>
           <Col>
@@ -26,7 +44,7 @@ const FooterComponent = () => {
           <Col>Links de contacto</Col>
         </Row>
       </Container>
-    </footer>
+    </motion.footer>
   );
 };
 

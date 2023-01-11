@@ -35,7 +35,7 @@ const containerVariants = {
   exit: {
     scale: 0.9,
     x: [0, 600, -3000],
-    y: [200, 400, 50, 50],
+    y: [35, 200, 0, 0],
     rotate: [0, -90, -90],
     transition: {
       duration: 1.3,
@@ -56,7 +56,7 @@ const Home = () => {
                 animate={{
                   scale: [0, 0, 1, 2, 2],
                   opacity: [0, 1],
-                  y: [-1000, -1000, 300, 35],
+                  y: [-1000, -1000, 200, 35],
                   color: "#ffff",
                 }}
                 variants={containerVariants}
@@ -73,7 +73,7 @@ const Home = () => {
                 transition={{ duration: 2.5 }}
                 animate={{
                   scale: [0, 1, 1, 1, 1.5],
-                  y: [200, 200, 200, -100],
+                  y: [100, 100, 100, -100],
                 }}
               >
                 <Link to="/base">
