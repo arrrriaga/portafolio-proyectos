@@ -10,7 +10,7 @@ const Modal = ({ closeModal, dataModal }) => {
 
   const contenidoAbout = {
     imagen: profile,
-    title: "👋 Hi, I'm Francisco<",
+    title: "👋 Hi, I'm Francisco",
     title2: "EDUCACIÓN:",
     LI1: "LIC. INGENIERÍA MECATRÓNICA:",
     LI1A: "UNIVERSIDAD LA SALLE CUERNAVACA",
@@ -89,7 +89,7 @@ const Modal = ({ closeModal, dataModal }) => {
         exit="exit"
       >
         <Container className="modalContainer">
-          <Row className="contenedor">
+          <Row style={{ height: "100%" }} className="contenedor">
             <Row className="titulo1">
               <Col>
                 <h3>
@@ -99,7 +99,7 @@ const Modal = ({ closeModal, dataModal }) => {
               </Col>
             </Row>
 
-            <Row className="cuerpo">
+            <Row className="cuerpo d-flex justify-content-center align-items-center">
               <Col
                 xm={12}
                 md={3}
@@ -107,7 +107,7 @@ const Modal = ({ closeModal, dataModal }) => {
               >
                 <h4 className="text-center">{contenido.title2}</h4>
               </Col>
-              <Col>
+              <Col xm={12} md={6}>
                 <Row>
                   <br />
                   <ul>
@@ -149,7 +149,7 @@ const Modal = ({ closeModal, dataModal }) => {
             </Row>
             <Row>
               <Col className="d-flex justify-content-center" xm={3}>
-                <button onClick={closeModal}>Cerrar</button>
+                <button onClick={closeModal}>Close</button>
               </Col>
             </Row>
           </Row>

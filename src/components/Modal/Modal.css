@@ -2,7 +2,6 @@
   max-width: 90vw;
   max-height: 75vh;
   position: absolute;
-
   top: 0;
   left: 0;
   right: 0;
@@ -13,6 +12,7 @@
   border-radius: 10px;
   z-index: 2;
 }
+
 .modal h3 {
   text-align: center;
 }
@@ -32,10 +32,10 @@
 }
 
 .modal li {
-  font-size: 12px;
+  font-size: 20px;
 }
 .modal .subItem {
-  font-size: 10px !important;
+  font-size: 12px !important;
   color: rgba(255, 255, 255, 0.643);
 }
 .modalContainer {

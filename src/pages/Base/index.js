@@ -63,7 +63,9 @@ const Base = ({ portafolioa, setShowModal, setDataModal }) => {
       <div className="container">
         <Row className="RowTitle ">
           <Col className="d-flex justify-content-center align-items-center">
-            <h3 className="text-center">Step 1: Choose Your Base</h3>
+            <h3 className="text-center" style={{ color: "blue" }}>
+              FULLSTACK WEB DEVELOPER
+            </h3>
           </Col>
         </Row>
         <Row className="RowBase d-flex justify-content-center">
