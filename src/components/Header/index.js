@@ -1,4 +1,5 @@
 import React from "react";
+import "./Header.css";
 import { motion } from "framer-motion";
 import profile from "../../images/profile.jpg";
 

@@ -35,22 +35,24 @@ const AppRouter = () => {
       <Backdrop showModal={showModal} setShowModal={setShowModal} />
 
       <AnimatePresence mode="wait" onExitComplete={() => setShowModal(false)}>
-        <Routes location={location} key={location.key}>
-          <Route path="/" element={<HomePage />} />
-          <Route
-            path="/base"
-            element={<Base addBase={addBase} pizza={pizza} />}
-          />
-          <Route
-            path="/toppings"
-            element={<Toppings addTopping={addTopping} pizza={pizza} />}
-          />
-          <Route
-            path="/order"
-            element={<Orders pizza={pizza} setShowModal={setShowModal} />}
-          />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
+        <main>
+          <Routes location={location} key={location.key}>
+            <Route path="/" element={<HomePage />} />
+            <Route
+              path="/base"
+              element={<Base addBase={addBase} pizza={pizza} />}
+            />
+            <Route
+              path="/toppings"
+              element={<Toppings addTopping={addTopping} pizza={pizza} />}
+            />
+            <Route
+              path="/order"
+              element={<Orders pizza={pizza} setShowModal={setShowModal} />}
+            />
+            <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
+        </main>
       </AnimatePresence>
 
       <FooterComponent />

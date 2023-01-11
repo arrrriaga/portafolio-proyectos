@@ -1,0 +1,25 @@
+.container {
+  height: 100%;
+}
+
+.Row0 {
+  height: 100%;
+}
+.Row1 {
+  height: 50%;
+
+  align-items: end;
+}
+.Row2 {
+  height: 50%;
+
+  align-items: start;
+}
+
+@media (max-width: 600px) {
+  .Row1 h2 {
+    position: relative;
+    top: 10px;
+    scale: 0.9;
+  }
+}

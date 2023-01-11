@@ -1,7 +1,8 @@
 import React from "react";
+import "./home.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 const buttonVariants = {
   visible: {
@@ -44,46 +45,57 @@ const containerVariants = {
 
 const Home = () => {
   return (
-    <Container className="home container">
-      <Row>
-        <motion.h2
-          transition={{ duration: 2.5 }}
-          animate={{
-            scale: [0, 0, 1, 2, 2],
-            opacity: [0, 1],
-            y: [-1000, -1000, 400, 200],
-            color: "#ffff",
-          }}
-          variants={containerVariants}
-          exit="exit"
-        >
-          Welcome to my Portfolio
-        </motion.h2>
-        <motion.div
-          className="d-flex justify-content-center"
-          transition={{ duration: 2.5 }}
-          animate={{
-            scale: [0, 1, 1, 1, 1.5],
-            y: [200, 200, 200, 0],
-          }}
-        >
-          <Link to="/base">
-            <motion.button
-              variants={buttonVariants}
-              animate="visible"
-              whileHover="hover"
-              exit={{
-                x: [0, 0, -3000],
-                transition: {
-                  duration: 0.8,
-                  delay: 0.38,
-                },
-              }}
-            >
-              Start
-            </motion.button>
-          </Link>
-        </motion.div>
+    <Container>
+      <Row className="Row0">
+        <Col>
+          <Row className="Row1 d-flex justify-content-center">
+            <Col xs={6} sm={12}>
+              <motion.div
+                className="text-center"
+                transition={{ duration: 2.5 }}
+                animate={{
+                  scale: [0, 0, 1, 2, 2],
+                  opacity: [0, 1],
+                  y: [-1000, -1000, 300, 35],
+                  color: "#ffff",
+                }}
+                variants={containerVariants}
+                exit="exit"
+              >
+                <h2> Welcome to my Portfolio</h2>
+              </motion.div>
+            </Col>
+          </Row>
+          <Row className="Row2">
+            <Col xs={12} sm={12}>
+              <motion.div
+                className="d-flex justify-content-center"
+                transition={{ duration: 2.5 }}
+                animate={{
+                  scale: [0, 1, 1, 1, 1.5],
+                  y: [200, 200, 200, -100],
+                }}
+              >
+                <Link to="/base">
+                  <motion.button
+                    variants={buttonVariants}
+                    animate="visible"
+                    whileHover="hover"
+                    exit={{
+                      x: [0, 0, -3000],
+                      transition: {
+                        duration: 0.8,
+                        delay: 0.38,
+                      },
+                    }}
+                  >
+                    Start
+                  </motion.button>
+                </Link>
+              </motion.div>
+            </Col>
+          </Row>
+        </Col>
       </Row>
     </Container>
   );
