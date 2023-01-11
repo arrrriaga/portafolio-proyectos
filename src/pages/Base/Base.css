@@ -1,0 +1,23 @@
+.RowTitle {
+  background-color: blue;
+  height: 25%;
+}
+.RowBase {
+  background-color: green;
+  height: 50%;
+}
+
+.RowBase ul {
+  width: 330px;
+  background-color: green;
+}
+.RowBase li {
+  cursor: pointer;
+  font-size: 40px;
+
+  padding-bottom: 20px;
+}
+.RowButton {
+  background-color: rgb(211, 20, 218);
+  height: 30%;
+}

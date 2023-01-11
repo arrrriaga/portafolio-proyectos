@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import { AnimatePresence } from "framer-motion";
 import HomePage from "../pages/home";
 import Base from "../pages/Base/index";
-import Toppings from "../pages/Toppings";
+import Toppings from "../pages/Portfolio";
 import Orders from "../pages/Oders";
 import { Backdrop } from "../components/BackDrop";
 import FooterComponent from "../components/Footer";

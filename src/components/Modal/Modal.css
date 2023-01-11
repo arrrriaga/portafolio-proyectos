@@ -1,0 +1,27 @@
+.modal {
+  max-width: 90vw;
+  max-height: 75vh;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto auto;
+  padding: 40px 20px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 2;
+}
+
+.modal button {
+  color: #444;
+  border-color: #444;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.modal p {
+  color: #444;
+  font-weight: bold;
+}

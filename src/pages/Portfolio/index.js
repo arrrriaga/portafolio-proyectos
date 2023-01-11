@@ -1,8 +1,9 @@
 import React from "react";
-import "./Base.css";
+import "./Portfolio.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
+
 const buttonVariants = {
   hover: {
     scale: 1.1,
@@ -35,21 +36,19 @@ const containerVariants = {
   },
 };
 
-const nexVariants = {
-  hidden: {
-    x: "-100vw",
-  },
-  visible: {
-    x: 0,
-    transition: { type: "spring", stiffness: 120 },
-  },
-};
+const Toppings = ({ addTopping, pizza }) => {
+  let toppings = [
+    "mushrooms",
+    "peppers",
+    "onions",
+    "olives",
+    "extra cheese",
+    "tomatoes",
+  ];
 
-const Base = ({ addBase, pizza }) => {
-  const bases = ["About me", "Work portfolio", "Contact me"];
   return (
     <motion.div
-      className="base-container"
+      className="toppings-container"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -58,7 +57,7 @@ const Base = ({ addBase, pizza }) => {
       <div className="container">
         <Row className="RowTitle ">
           <Col className="d-flex justify-content-center align-items-center">
-            <h3 className="text-center">Step 1: Choose Your Base</h3>
+            <h3>Step 2: Choose Toppings</h3>
           </Col>
         </Row>
         <Row className="RowBase d-flex justify-content-center">
@@ -66,39 +65,34 @@ const Base = ({ addBase, pizza }) => {
             style={{ background: "red" }}
             className="d-flex justify-content-center"
           >
+            {" "}
             <ul>
-              {bases.map((base) => {
-                let spanClass = pizza.base === base ? "active" : "";
+              {toppings.map((topping) => {
+                let spanClass = pizza.toppings.includes(topping)
+                  ? "active"
+                  : "";
                 return (
                   <motion.li
-                    key={base}
-                    onClick={() => addBase(base)}
-                    whileHover={{ scale: 1.1, originX: 0, color: "#f8e112" }}
+                    key={topping}
+                    onClick={() => addTopping(topping)}
+                    whileHover={{ scale: 1.3, originX: 0, color: "#f8e112" }}
                     transition={{ type: "spring", stiffness: 300 }}
                   >
-                    <span className={spanClass}>{base}</span>
+                    <span className={spanClass}>{topping}</span>
                   </motion.li>
                 );
               })}
             </ul>
           </Col>
         </Row>
-        <Row className="RowButton ">
+
+        <Row className="RowButton">
           <Col className="d-flex justify-content-center">
-            {pizza.base && (
-              <motion.div
-                className="next"
-                variants={nexVariants}
-                initial="hidden"
-                animate="visible"
-              >
-                <Link to="/toppings">
-                  <motion.button variants={buttonVariants} whileHover="hover">
-                    Next
-                  </motion.button>
-                </Link>
-              </motion.div>
-            )}
+            <Link to="/order">
+              <motion.button variants={buttonVariants} whileHover="hover">
+                Order
+              </motion.button>
+            </Link>
           </Col>
         </Row>
       </div>
@@ -106,4 +100,4 @@ const Base = ({ addBase, pizza }) => {
   );
 };
 
-export default Base;
+export default Toppings;
