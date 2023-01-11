@@ -37,4 +37,7 @@
     height: 180px;
     background-color: yellow;
   }
+  .base-container .RowTitle {
+    height: auto;
+  }
 }

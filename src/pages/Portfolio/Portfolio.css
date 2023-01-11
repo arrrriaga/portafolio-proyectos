@@ -45,4 +45,7 @@
     height: 180px;
     background-color: yellow;
   }
+  .toppings-container .RowTitle {
+    height: auto;
+  }
 }
