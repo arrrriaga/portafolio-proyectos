@@ -12,9 +12,22 @@
   border-radius: 10px;
   z-index: 2;
 }
-.modal h3,
-h4 {
+.modal h3 {
   text-align: center;
+}
+
+.modal .col-left {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0px;
+}
+
+.modal .profileP {
+  margin-left: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .modal li {
@@ -36,4 +49,13 @@ h4 {
 .modal p {
   color: #444;
   font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .modal .col-left {
+    border-right: 0px solid rgba(255, 255, 255, 0.2);
+    padding: 0px;
+  }
+}
+@media (max-height: 800px) and (min-width: 700px) {
 }
