@@ -13,6 +13,7 @@ import FooterComponent from "../components/Footer";
 const AppRouter = () => {
   const location = useLocation();
   const [portafolioa, setportafolioa] = useState({ base: "", toppings: [] });
+  const [dataModal, setDataModal] = useState("hola");
   const [showModal, setShowModal] = useState(false);
 
   const addBase = (base) => {
@@ -32,7 +33,12 @@ const AppRouter = () => {
     <div className="BodyContainer">
       <Header />
       {/* <Modal showModal={showModal} setShowModal={setShowModal} /> */}
-      <Backdrop showModal={showModal} setShowModal={setShowModal} />
+
+      <Backdrop
+        showModal={showModal}
+        setShowModal={setShowModal}
+        dataModal={dataModal}
+      />
 
       <main>
         <AnimatePresence mode="wait" onExitComplete={() => setShowModal(false)}>
@@ -45,6 +51,7 @@ const AppRouter = () => {
                   addBase={addBase}
                   portafolioa={portafolioa}
                   setShowModal={setShowModal}
+                  setDataModal={setDataModal}
                 />
               }
             />

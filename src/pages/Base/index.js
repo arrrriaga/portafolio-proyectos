@@ -1,8 +1,14 @@
 import React from "react";
 import "./Base.css";
 import { motion } from "framer-motion";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
+
+const listItem = {
+  hover: { scale: 1.1, originX: 0, color: "#f8e112" },
+  visible: { type: "spring", stiffness: 300 },
+};
+
 const buttonVariants = {
   hover: {
     scale: 1.1,
@@ -45,8 +51,7 @@ const nexVariants = {
   },
 };
 
-const Base = ({ addBase, portafolioa, setShowModal }) => {
-  const bases = ["About me", "Work portfolio", "Contact me"];
+const Base = ({ portafolioa, setShowModal, setDataModal }) => {
   return (
     <motion.div
       className="base-container"
@@ -64,19 +69,42 @@ const Base = ({ addBase, portafolioa, setShowModal }) => {
         <Row className="RowBase d-flex justify-content-center">
           <Col className="d-flex justify-content-center">
             <ul>
-              {bases.map((base) => {
-                let spanClass = portafolioa.base === base ? "active" : "";
-                return (
-                  <motion.li
-                    key={base}
-                    onClick={() => addBase(base)}
-                    whileHover={{ scale: 1.1, originX: 0, color: "#f8e112" }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    <span className={spanClass}>{base}</span>
-                  </motion.li>
-                );
-              })}
+              <motion.li
+                key={"1"}
+                onClick={() => {
+                  setDataModal("About");
+                  setShowModal(true);
+                }}
+                variants={listItem}
+                whileHover="hover"
+                transition="visible"
+              >
+                <span>About me</span>
+              </motion.li>
+
+              <Link to="/toppings" style={{ color: "white" }}>
+                <motion.li
+                  key={"2"}
+                  variants={listItem}
+                  whileHover="hover"
+                  transition="visible"
+                >
+                  <span>Work portfolio</span>
+                </motion.li>
+              </Link>
+
+              <motion.li
+                key={"3"}
+                onClick={() => {
+                  setDataModal("Contact");
+                  setShowModal(true);
+                }}
+                variants={listItem}
+                whileHover="hover"
+                transition="visible"
+              >
+                <span>Contact me</span>
+              </motion.li>
             </ul>
           </Col>
         </Row>

@@ -13,7 +13,7 @@ const backDrop = {
   },
 };
 
-const Backdrop = ({ showModal, setShowModal }) => {
+const Backdrop = ({ showModal, setShowModal, dataModal }) => {
   const closeModal = () => {
     setShowModal(false);
   };
@@ -29,7 +29,7 @@ const Backdrop = ({ showModal, setShowModal }) => {
             initial="hidden"
             animate="visible"
           ></motion.div>
-          <Modal closeModal={closeModal} />
+          <Modal closeModal={closeModal} dataModal={dataModal} />
         </>
       )}
     </AnimatePresence>
