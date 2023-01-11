@@ -24,29 +24,23 @@ const Modal = ({ closeModal, dataModal }) => {
     title: "👋 Hi, I'm Francisco",
     title2: " Contact me:",
     LI1: (
-      <a href="https://github.com/arrrriaga">
-        <i className="fa-2x fa-brands fa-github"> Github</i>
+      <a href="mailto:arriaga.francisco@outlook.com">
+        <i className="fa-2x fa-at"></i>
       </a>
     ),
-    LI1A: "https://github.com/arrrriaga",
+    LI1A: "arriaga.francisco@outlook.com",
     LI2: (
       <a href="https://www.linkedin.com/in/francisco-arriaga-velasco-7a74611b5/">
-        <i className="fa-2x fa-brands fa-linkedin"> Linkedin</i>
+        <i className="fa-2x fa-brands fa-linkedin"></i>
       </a>
     ),
     LI2A: "https://www.linkedin.com/in/francisco-arriaga-velasco-7a74611b5/",
     LI3: (
       <a href="https://wa.me/qr/RU3P4HAMEZVCC1">
-        <i className="fa-2x fa-brands fa-whatsapp"> Whatsapp</i>
+        <i className="fa-2x fa-brands fa-whatsapp"></i>
       </a>
     ),
     LI3A: "https://wa.me/qr/RU3P4HAMEZVCC1",
-    LI4: (
-      <a href="mailto:arriaga.francisco@outlook.com">
-        <i className="fa-2x fa-at"> Email</i>
-      </a>
-    ),
-    LI4A: "arriaga.francisco@outlook.com",
   };
 
   const setearContenidoAbout = () => {
@@ -89,7 +83,7 @@ const Modal = ({ closeModal, dataModal }) => {
         exit="exit"
       >
         <Container className="modalContainer">
-          <Row style={{ height: "100%" }} className="contenedor">
+          <Row className="contenedor">
             <Row className="titulo1">
               <Col>
                 <h3>
@@ -99,7 +93,7 @@ const Modal = ({ closeModal, dataModal }) => {
               </Col>
             </Row>
 
-            <Row className="cuerpo d-flex justify-content-center align-items-center">
+            <Row className="cuerpo d-flex justify-content-center ">
               <Col
                 xm={12}
                 md={3}

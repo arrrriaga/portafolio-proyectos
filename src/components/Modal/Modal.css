@@ -1,6 +1,6 @@
 .modal {
   max-width: 90vw;
-  max-height: 75vh;
+  max-height: 80vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -24,6 +24,7 @@
 
 .modal .profileP {
   margin-left: 10px;
+  margin-top: 10px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -60,6 +61,15 @@
   .modal .col-left {
     border-right: 0px solid rgba(255, 255, 255, 0.2);
     padding: 0px;
+  }
+
+  .modal li,
+  i {
+    font-size: 12px;
+  }
+  .modal .subItem {
+    font-size: 10px !important;
+    color: rgba(255, 255, 255, 0.643);
   }
 }
 @media (max-height: 800px) and (min-width: 700px) {
