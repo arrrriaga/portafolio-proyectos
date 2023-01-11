@@ -4,8 +4,8 @@ import { Col, Container, Row } from "react-bootstrap";
 const FooterComponent = () => {
   return (
     <footer>
-      <Container fluid className="FooterContainer text-center py-0">
-        <Row className="pt-2">
+      <Container fluid className="FooterContainer text-center py-3">
+        <Row>
           <Col>
             <a href="https://wa.me/qr/RU3P4HAMEZVCC1">
               <i className="fa-2x fa-brands fa-whatsapp"></i>

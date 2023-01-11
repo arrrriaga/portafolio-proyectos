@@ -18,15 +18,11 @@ div {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 /* Distribución de página */
-header {
-  background-color: rgba(255, 0, 0, 0.225);
-}
+
 main {
-  background-color: blue;
   height: 75vh;
 }
 footer {
-  background-color: green;
   position: absolute;
   width: 100%;
   bottom: 0;
