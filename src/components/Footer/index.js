@@ -39,6 +39,11 @@ const FooterComponent = () => {
               <i className="fa-2x fa-brands fa-linkedin"></i>
             </a>
           </Col>
+          <Col>
+            <a href="mailto:arriaga.francisco@outlook.com">
+              <i className="fa-2x fa-at" />
+            </a>
+          </Col>
         </Row>
         <Row>
           <Col>Links de contacto</Col>
