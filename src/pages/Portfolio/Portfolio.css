@@ -33,8 +33,9 @@
     width: 260px;
   }
 }
-@media (max-height: 800px) {
+@media (max-height: 800px) and (min-width: 700px) {
   .toppings-container .RowBase li {
+    background-color: yellow;
     font-size: 20px;
     padding-bottom: 0px;
   }
@@ -43,7 +44,6 @@
   }
   .toppings-container .RowBase {
     height: 180px;
-    background-color: yellow;
   }
   .toppings-container .RowTitle {
     height: auto;

@@ -35,7 +35,23 @@
   }
   .base-container .RowBase {
     height: 180px;
+  }
+  .base-container .RowTitle {
+    height: auto;
+  }
+}
+
+@media (max-height: 800px) and (min-width: 700px) {
+  .base-container .RowBase li {
     background-color: yellow;
+    font-size: 20px;
+    padding-bottom: 0px;
+  }
+  .base-container .RowBase ul {
+    width: 260px;
+  }
+  .base-container .RowBase {
+    height: 180px;
   }
   .base-container .RowTitle {
     height: auto;
