@@ -42,11 +42,11 @@ const containerVariants = {
 
 const Toppings = ({ addTopping, portafolioa }) => {
   let toppings = [
-    "Restaurante App",
-    "E-comerce",
-    "Weather Map App",
-    "Landing Page Skin Care",
-    "Control CRUD",
+    { title: "Restaurante App" },
+    { title: "E-comerce" },
+    { title: "Weather Map App" },
+    { title: "Landing Page Skin Care" },
+    { title: "Control CRUD" },
   ];
 
   return (
@@ -68,18 +68,18 @@ const Toppings = ({ addTopping, portafolioa }) => {
             {" "}
             <ul>
               {toppings.map((topping) => {
-                let spanClass = portafolioa.toppings.includes(topping)
+                let spanClass = portafolioa.toppings.includes(topping.title)
                   ? "active"
                   : "";
                 return (
                   <motion.li
-                    key={topping}
-                    onClick={() => addTopping(topping)}
+                    key={topping.title}
+                    onClick={() => console.log(topping.title)}
                     variants={listItem}
                     whileHover="hover"
                     transition="visible"
                   >
-                    <span className={spanClass}>{topping}</span>
+                    <span className={spanClass}>{topping.title}</span>
                   </motion.li>
                 );
               })}

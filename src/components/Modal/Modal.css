@@ -46,8 +46,8 @@
 .modal button {
   position: absolute;
   bottom: 0;
-  color: rgb(107, 127, 143);
-  border-color: rgb(107, 127, 143);
+  color: #f8e112;
+  border-color: #f8e112;
   font-weight: bold;
   margin-top: 20px;
 }
