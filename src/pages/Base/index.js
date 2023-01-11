@@ -1,7 +1,7 @@
 import React from "react";
 import "./Base.css";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
 const buttonVariants = {
   hover: {
