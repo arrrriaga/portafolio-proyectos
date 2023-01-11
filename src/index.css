@@ -19,24 +19,22 @@ div {
 }
 /* Distribución de página */
 header {
-  background-color: red;
-  height: 15vh;
+  background-color: rgba(255, 0, 0, 0.225);
 }
 main {
   background-color: blue;
-  height: 55vh;
+  height: 75vh;
 }
 footer {
   background-color: green;
   height: 10vh;
   position: absolute;
   width: 100%;
-
   bottom: 0;
 }
 
 body {
-  /* overflow: hidden; */
+  overflow: hidden;
   background: rgb(45, 46, 81);
   height: 100vh;
   width: 100%;
