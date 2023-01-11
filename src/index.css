@@ -34,7 +34,8 @@ footer {
 body {
   overflow: hidden;
   background: rgb(45, 46, 81);
-  /* position: fixed; */
+  width: 100%;
+  position: fixed;
 }
 
 button {
