@@ -34,8 +34,8 @@ const AppRouter = () => {
       {/* <Modal showModal={showModal} setShowModal={setShowModal} /> */}
       <Backdrop showModal={showModal} setShowModal={setShowModal} />
 
-      <AnimatePresence mode="wait" onExitComplete={() => setShowModal(false)}>
-        <main>
+      <main>
+        <AnimatePresence mode="wait" onExitComplete={() => setShowModal(false)}>
           <Routes location={location} key={location.key}>
             <Route path="/" element={<HomePage />} />
             <Route
@@ -52,8 +52,8 @@ const AppRouter = () => {
             />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
-        </main>
-      </AnimatePresence>
+        </AnimatePresence>
+      </main>
 
       <FooterComponent />
     </>
