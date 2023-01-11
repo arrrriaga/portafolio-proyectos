@@ -18,14 +18,13 @@
 .base-container .RowBase li {
   cursor: pointer;
   font-size: 40px;
-
   padding-bottom: 20px;
 }
 .base-container .RowButton {
   height: 30%;
 }
 
-@media (max-height: 800px) {
+@media (max-height: 600px) {
   .base-container .RowBase li {
     font-size: 20px;
     padding-bottom: 0px;
@@ -43,7 +42,6 @@
 
 @media (max-height: 800px) and (min-width: 700px) {
   .base-container .RowBase li {
-    background-color: yellow;
     font-size: 20px;
     padding-bottom: 0px;
   }

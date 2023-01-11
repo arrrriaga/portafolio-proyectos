@@ -35,7 +35,6 @@
 }
 @media (max-height: 800px) and (min-width: 700px) {
   .toppings-container .RowBase li {
-    background-color: yellow;
     font-size: 20px;
     padding-bottom: 0px;
   }
