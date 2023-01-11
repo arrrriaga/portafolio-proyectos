@@ -1,0 +1,35 @@
+.container {
+  height: 100%;
+}
+.toppings-container {
+  height: 100%;
+}
+
+.toppings-container .RowTitle {
+  height: 25%;
+}
+.toppings-container .RowBase {
+  height: 50%;
+}
+
+.toppings-container .RowBase ul {
+  width: 330px;
+}
+.RowBase li {
+  cursor: pointer;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.toppings-container .RowButton {
+  height: 30%;
+}
+
+@media (max-width: 600px) {
+  .toppings-container .RowBase li {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  .toppings-container .RowBase ul {
+    width: 260px;
+  }
+}

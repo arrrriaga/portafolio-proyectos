@@ -38,12 +38,11 @@ const containerVariants = {
 
 const Toppings = ({ addTopping, pizza }) => {
   let toppings = [
-    "mushrooms",
-    "peppers",
-    "onions",
-    "olives",
-    "extra cheese",
-    "tomatoes",
+    "Restaurante App",
+    "E-comerce",
+    "Weather Map App",
+    "Landing Page Skin Care",
+    "Control CRUD",
   ];
 
   return (
@@ -61,10 +60,7 @@ const Toppings = ({ addTopping, pizza }) => {
           </Col>
         </Row>
         <Row className="RowBase d-flex justify-content-center">
-          <Col
-            style={{ background: "red" }}
-            className="d-flex justify-content-center"
-          >
+          <Col className="d-flex justify-content-center">
             {" "}
             <ul>
               {toppings.map((topping) => {

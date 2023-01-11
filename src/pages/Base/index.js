@@ -2,7 +2,7 @@ import React from "react";
 import "./Base.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 const buttonVariants = {
   hover: {
     scale: 1.1,
@@ -62,10 +62,7 @@ const Base = ({ addBase, pizza }) => {
           </Col>
         </Row>
         <Row className="RowBase d-flex justify-content-center">
-          <Col
-            style={{ background: "red" }}
-            className="d-flex justify-content-center"
-          >
+          <Col className="d-flex justify-content-center">
             <ul>
               {bases.map((base) => {
                 let spanClass = pizza.base === base ? "active" : "";
