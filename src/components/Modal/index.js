@@ -10,19 +10,43 @@ const Modal = ({ closeModal, dataModal }) => {
 
   const contenidoAbout = {
     imagen: profile,
-    title: "About me",
+    title: "👋 Hi, I'm Francisco<",
     title2: "EDUCACIÓN:",
-    LI1: "LIC. INGENIERÍA MECATRÓNICA: UNIVERSIDAD LA SALLE CUERNAVACA",
-    LI2: "BOOTCAMP ROGRAMACIÓN WEB FULLSTACK: UNIVERSIDAD UTEL",
-    LI3: "INGLÉS AVANZADO: CELE UAEM",
+    LI1: "LIC. INGENIERÍA MECATRÓNICA:",
+    LI1A: "UNIVERSIDAD LA SALLE CUERNAVACA",
+    LI2: "BOOTCAMP ROGRAMACIÓN WEB FULLSTACK:",
+    LI2A: "UNIVERSIDAD UTEL",
+    LI3: "INGLÉS AVANZADO:",
+    LI3A: "CELE UAEM",
   };
   const contenidoContact = {
     imagen: profile,
-    title: "Contact",
-    title2: "Mis redes socials:",
-    LI1: "LIC. INGENIERÍA MECATRÓNICA: UNIVERSIDAD LA SALLE CUERNAVACA",
-    LI2: "BOOTCAMP ROGRAMACIÓN WEB FULLSTACK: UNIVERSIDAD UTEL",
-    LI3: "INGLÉS AVANZADO: CELE UAEM",
+    title: "👋 Hi, I'm Francisco",
+    title2: " Contact me:",
+    LI1: (
+      <a href="https://github.com/arrrriaga">
+        <i className="fa-2x fa-brands fa-github"> Github</i>
+      </a>
+    ),
+    LI1A: "https://github.com/arrrriaga",
+    LI2: (
+      <a href="https://www.linkedin.com/in/francisco-arriaga-velasco-7a74611b5/">
+        <i className="fa-2x fa-brands fa-linkedin"> Linkedin</i>
+      </a>
+    ),
+    LI2A: "https://www.linkedin.com/in/francisco-arriaga-velasco-7a74611b5/",
+    LI3: (
+      <a href="https://wa.me/qr/RU3P4HAMEZVCC1">
+        <i className="fa-2x fa-brands fa-whatsapp"> Whatsapp</i>
+      </a>
+    ),
+    LI3A: "https://wa.me/qr/RU3P4HAMEZVCC1",
+    LI4: (
+      <a href="mailto:arriaga.francisco@outlook.com">
+        <i className="fa-2x fa-at"> Email</i>
+      </a>
+    ),
+    LI4A: "arriaga.francisco@outlook.com",
   };
 
   const setearContenidoAbout = () => {
@@ -87,14 +111,38 @@ const Modal = ({ closeModal, dataModal }) => {
                 <Row>
                   <br />
                   <ul>
-                    <li>{contenido.LI1}</li>
-                    <br />
-                    <li>{contenido.LI2}</li>
-                    <br />
-                    <li>{contenido.LI3}</li>
                     <li>
-                      <p>Modal: {dataModal}</p>
+                      {contenido.LI1}
+                      <ul>
+                        <li className="subItem">{contenido.LI1A}</li>
+                      </ul>
                     </li>
+                    <br />
+                    <li>
+                      {contenido.LI2}
+                      <ul>
+                        <li className="subItem">{contenido.LI2A}</li>
+                      </ul>
+                    </li>
+                    <br />
+                    <li>
+                      {contenido.LI3}
+                      <ul>
+                        <li className="subItem">{contenido.LI3A}</li>
+                      </ul>
+                    </li>
+                    {contenido.LI4A && (
+                      <>
+                        {" "}
+                        <br />
+                        <li>
+                          {contenido.LI4}
+                          <ul>
+                            <li className="subItem">{contenido.LI4A}</li>
+                          </ul>
+                        </li>
+                      </>
+                    )}
                   </ul>
                 </Row>
               </Col>

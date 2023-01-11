@@ -32,7 +32,11 @@
 }
 
 .modal li {
-  font-size: 12;
+  font-size: 12px;
+}
+.modal .subItem {
+  font-size: 10px !important;
+  color: rgba(255, 255, 255, 0.643);
 }
 .modalContainer {
   position: relative;
