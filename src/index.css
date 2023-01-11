@@ -24,7 +24,7 @@ header {
 }
 main {
   background-color: blue;
-  height: 75vh;
+  height: 55vh;
 }
 footer {
   background-color: green;
@@ -40,7 +40,7 @@ body {
   background: rgb(45, 46, 81);
   height: 100vh;
   width: 100%;
-  position: fixed;
+  position: relative;
 }
 
 button {

@@ -29,7 +29,7 @@ const AppRouter = () => {
     setPizza({ ...pizza, toppings: newToppings });
   };
   return (
-    <>
+    <div className="BodyContainer">
       <Header />
       {/* <Modal showModal={showModal} setShowModal={setShowModal} /> */}
       <Backdrop showModal={showModal} setShowModal={setShowModal} />
@@ -56,7 +56,7 @@ const AppRouter = () => {
       </main>
 
       <FooterComponent />
-    </>
+    </div>
   );
 };
 
