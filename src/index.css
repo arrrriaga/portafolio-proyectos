@@ -19,16 +19,20 @@ div {
 }
 /* Distribución de página */
 header {
-  /* background-color: red; */
+  background-color: red;
   height: 15vh;
 }
 main {
-  /* background-color: blue; */
-  height: 75vh;
+  background-color: blue;
+  height: 85vh;
 }
 footer {
-  /* background-color: green; */
+  background-color: green;
   height: 10vh;
+  position: absolute;
+  width: 100%;
+
+  bottom: 0;
 }
 
 body {
