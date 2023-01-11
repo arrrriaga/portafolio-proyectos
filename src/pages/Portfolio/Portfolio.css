@@ -33,3 +33,16 @@
     width: 260px;
   }
 }
+@media (max-height: 800px) {
+  .toppings-container .RowBase li {
+    font-size: 20px;
+    padding-bottom: 0px;
+  }
+  .toppings-container .RowBase ul {
+    width: 260px;
+  }
+  .toppings-container .RowBase {
+    height: 180px;
+    background-color: yellow;
+  }
+}

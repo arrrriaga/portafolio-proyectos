@@ -25,7 +25,16 @@
   height: 30%;
 }
 
-@media (max-width: 600px) {
+@media (max-height: 800px) {
+  .base-container .RowBase li {
+    font-size: 20px;
+    padding-bottom: 0px;
+  }
   .base-container .RowBase ul {
+    width: 260px;
+  }
+  .base-container .RowBase {
+    height: 180px;
+    background-color: yellow;
   }
 }
