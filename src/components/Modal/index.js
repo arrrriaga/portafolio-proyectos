@@ -2,52 +2,17 @@ import "./Modal.css";
 // import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Col, Container, Row } from "react-bootstrap";
-import profile from "../../images/profile.jpg";
+import { ContenidoAbout2, ContenidoContact2 } from "./contenido";
 import { useEffect, useState } from "react";
 
 const Modal = ({ closeModal, dataModal }) => {
-  const [contenido, setContenido] = useState({});
-
-  const contenidoAbout = {
-    imagen: profile,
-    title: "👋 Hi, I'm Francisco",
-    title2: "EDUCACIÓN:",
-    LI1: "LIC. INGENIERÍA MECATRÓNICA:",
-    LI1A: "UNIVERSIDAD LA SALLE CUERNAVACA",
-    LI2: "BOOTCAMP ROGRAMACIÓN WEB FULLSTACK:",
-    LI2A: "UNIVERSIDAD UTEL",
-    LI3: "INGLÉS AVANZADO:",
-    LI3A: "CELE UAEM",
-  };
-  const contenidoContact = {
-    imagen: profile,
-    title: "👋 Hi, I'm Francisco",
-    title2: " Contact me:",
-    LI1: (
-      <a href="mailto:arriaga.francisco@outlook.com">
-        <i className="fa-2x fa-at"></i>
-      </a>
-    ),
-    LI1A: "arriaga.francisco@outlook.com",
-    LI2: (
-      <a href="https://www.linkedin.com/in/francisco-arriaga-velasco-7a74611b5/">
-        <i className="fa-2x fa-brands fa-linkedin"></i>
-      </a>
-    ),
-    LI2A: "https://www.linkedin.com/in/francisco-arriaga-velasco-7a74611b5/",
-    LI3: (
-      <a href="https://wa.me/qr/RU3P4HAMEZVCC1">
-        <i className="fa-2x fa-brands fa-whatsapp"></i>
-      </a>
-    ),
-    LI3A: "https://wa.me/qr/RU3P4HAMEZVCC1",
-  };
+  const [contenido2, setContenido2] = useState({});
 
   const setearContenidoAbout = () => {
-    setContenido(contenidoAbout);
+    setContenido2(ContenidoAbout2);
   };
   const setearContenidoContact = () => {
-    setContenido(contenidoContact);
+    setContenido2(ContenidoContact2);
   };
 
   useEffect(
@@ -87,8 +52,12 @@ const Modal = ({ closeModal, dataModal }) => {
             <Row className="titulo1">
               <Col>
                 <h3>
-                  {contenido.title}{" "}
-                  <img className="profileP" src={profile} alt="PROFILE"></img>
+                  {contenido2.title}
+                  <img
+                    className="profileP"
+                    src={contenido2.imagen}
+                    alt="PROFILE"
+                  ></img>
                 </h3>
               </Col>
             </Row>
@@ -99,44 +68,22 @@ const Modal = ({ closeModal, dataModal }) => {
                 md={3}
                 className="col-left d-flex justify-content-center align-items-center"
               >
-                <h4 className="text-center">{contenido.title2}</h4>
+                <h4 className="text-center">{contenido2.title2}</h4>
               </Col>
               <Col xm={12} md={6}>
                 <Row>
                   <br />
                   <ul>
-                    <li>
-                      {contenido.LI1}
-                      <ul>
-                        <li className="subItem">{contenido.LI1A}</li>
-                      </ul>
-                    </li>
-                    <br />
-                    <li>
-                      {contenido.LI2}
-                      <ul>
-                        <li className="subItem">{contenido.LI2A}</li>
-                      </ul>
-                    </li>
-                    <br />
-                    <li>
-                      {contenido.LI3}
-                      <ul>
-                        <li className="subItem">{contenido.LI3A}</li>
-                      </ul>
-                    </li>
-                    {contenido.LI4A && (
-                      <>
-                        {" "}
-                        <br />
-                        <li>
-                          {contenido.LI4}
-                          <ul>
-                            <li className="subItem">{contenido.LI4A}</li>
-                          </ul>
-                        </li>
-                      </>
-                    )}
+                    {contenido2.lp
+                      ? Object.values(contenido2.lp).map((item) => (
+                          <li>
+                            {item.lip}
+                            <ul>
+                              <li className="subItem">{item.lis}</li>
+                            </ul>
+                          </li>
+                        ))
+                      : null}
                   </ul>
                 </Row>
               </Col>

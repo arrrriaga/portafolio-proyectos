@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
 
 const listItem = {
-  hover: { scale: 1.1, originX: 0, color: "#4c687f" },
+  hover: { scale: 1.1, originX: 0, color: "rgb(107, 127, 143)" },
   visible: { type: "spring", stiffness: 300 },
 };
 const buttonVariants = {
@@ -60,7 +60,7 @@ const Toppings = ({ addTopping, portafolioa }) => {
       <div className="container">
         <Row className="RowTitle ">
           <Col className="d-flex justify-content-center align-items-center">
-            <h3 style={{ color: "#4c687f" }}>PROJECTS PORTFOLIO</h3>
+            <h3 style={{ color: "rgb(107, 127, 143)" }}>PROJECTS PORTFOLIO</h3>
           </Col>
         </Row>
         <Row className="RowBase d-flex justify-content-center">

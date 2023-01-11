@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
 
 const listItem = {
-  hover: { scale: 1.1, originX: 0, color: "#4c687f" },
+  hover: { scale: 1.1, originX: 0, color: "rgb(107, 127, 143)" },
   visible: { type: "spring", stiffness: 300 },
 };
 
@@ -63,7 +63,7 @@ const Base = ({ portafolioa, setShowModal, setDataModal }) => {
       <div className="container">
         <Row className="RowTitle ">
           <Col className="d-flex justify-content-center align-items-center">
-            <h3 className="text-center" style={{ color: "#4c687f" }}>
+            <h3 className="text-center" style={{ color: "rgb(107, 127, 143)" }}>
               FULLSTACK WEB DEVELOPER
             </h3>
           </Col>
