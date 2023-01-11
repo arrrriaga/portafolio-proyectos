@@ -27,7 +27,6 @@ main {
 }
 footer {
   background-color: green;
-  height: 10vh;
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -36,9 +35,9 @@ footer {
 body {
   overflow: hidden;
   background: rgb(45, 46, 81);
-  height: 100vh;
   width: 100%;
-  position: relative;
+  height: 100%;
+  position: fixed;
 }
 
 button {
