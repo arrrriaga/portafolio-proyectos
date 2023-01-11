@@ -12,21 +12,21 @@ import FooterComponent from "../components/Footer";
 
 const AppRouter = () => {
   const location = useLocation();
-  const [pizza, setPizza] = useState({ base: "", toppings: [] });
+  const [portafolioa, setportafolioa] = useState({ base: "", toppings: [] });
   const [showModal, setShowModal] = useState(false);
 
   const addBase = (base) => {
-    setPizza({ ...pizza, base });
+    setportafolioa({ ...portafolioa, base });
   };
 
   const addTopping = (topping) => {
     let newToppings;
-    if (!pizza.toppings.includes(topping)) {
-      newToppings = [...pizza.toppings, topping];
+    if (!portafolioa.toppings.includes(topping)) {
+      newToppings = [...portafolioa.toppings, topping];
     } else {
-      newToppings = pizza.toppings.filter((item) => item !== topping);
+      newToppings = portafolioa.toppings.filter((item) => item !== topping);
     }
-    setPizza({ ...pizza, toppings: newToppings });
+    setportafolioa({ ...portafolioa, toppings: newToppings });
   };
   return (
     <div className="BodyContainer">
@@ -40,15 +40,25 @@ const AppRouter = () => {
             <Route path="/" element={<HomePage />} />
             <Route
               path="/base"
-              element={<Base addBase={addBase} pizza={pizza} />}
+              element={
+                <Base
+                  addBase={addBase}
+                  portafolioa={portafolioa}
+                  setShowModal={setShowModal}
+                />
+              }
             />
             <Route
               path="/toppings"
-              element={<Toppings addTopping={addTopping} pizza={pizza} />}
+              element={
+                <Toppings addTopping={addTopping} portafolioa={portafolioa} />
+              }
             />
             <Route
               path="/order"
-              element={<Orders pizza={pizza} setShowModal={setShowModal} />}
+              element={
+                <Orders portafolioa={portafolioa} setShowModal={setShowModal} />
+              }
             />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>

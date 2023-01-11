@@ -36,7 +36,7 @@ const containerVariants = {
   },
 };
 
-const Toppings = ({ addTopping, pizza }) => {
+const Toppings = ({ addTopping, portafolioa }) => {
   let toppings = [
     "Restaurante App",
     "E-comerce",
@@ -64,7 +64,7 @@ const Toppings = ({ addTopping, pizza }) => {
             {" "}
             <ul>
               {toppings.map((topping) => {
-                let spanClass = pizza.toppings.includes(topping)
+                let spanClass = portafolioa.toppings.includes(topping)
                   ? "active"
                   : "";
                 return (

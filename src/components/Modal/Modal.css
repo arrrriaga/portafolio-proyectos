@@ -8,15 +8,27 @@
   right: 0;
   margin: 0 auto auto;
   padding: 40px 20px;
-  background-color: white;
+  background-color: rgb(34, 25, 84);
   border-radius: 10px;
-  text-align: center;
   z-index: 2;
+}
+.modal h3,
+h4 {
+  text-align: center;
+}
+
+.modal li {
+  font-size: 12;
+}
+.modalContainer {
+  position: relative;
 }
 
 .modal button {
-  color: #444;
-  border-color: #444;
+  position: absolute;
+  bottom: 0;
+  color: #f8e112;
+  border-color: #f8e112;
   font-weight: bold;
   margin-top: 20px;
 }

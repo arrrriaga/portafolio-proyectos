@@ -45,7 +45,7 @@ const nexVariants = {
   },
 };
 
-const Base = ({ addBase, pizza }) => {
+const Base = ({ addBase, portafolioa, setShowModal }) => {
   const bases = ["About me", "Work portfolio", "Contact me"];
   return (
     <motion.div
@@ -65,7 +65,7 @@ const Base = ({ addBase, pizza }) => {
           <Col className="d-flex justify-content-center">
             <ul>
               {bases.map((base) => {
-                let spanClass = pizza.base === base ? "active" : "";
+                let spanClass = portafolioa.base === base ? "active" : "";
                 return (
                   <motion.li
                     key={base}
@@ -82,18 +82,27 @@ const Base = ({ addBase, pizza }) => {
         </Row>
         <Row className="RowButton ">
           <Col className="d-flex justify-content-center">
-            {pizza.base && (
+            {portafolioa.base && (
               <motion.div
                 className="next"
                 variants={nexVariants}
                 initial="hidden"
                 animate="visible"
               >
-                <Link to="/toppings">
+                <motion.button
+                  onClick={() => {
+                    setShowModal(true);
+                  }}
+                  variants={buttonVariants}
+                  whileHover="hover"
+                >
+                  Next
+                </motion.button>
+                {/* <Link to="/toppings">
                   <motion.button variants={buttonVariants} whileHover="hover">
                     Next
                   </motion.button>
-                </Link>
+                </Link> */}
               </motion.div>
             )}
           </Col>
