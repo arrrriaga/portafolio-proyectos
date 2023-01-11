@@ -24,7 +24,7 @@ header {
 }
 main {
   background-color: blue;
-  height: 85vh;
+  height: 75vh;
 }
 footer {
   background-color: green;
@@ -38,6 +38,7 @@ footer {
 body {
   overflow: hidden;
   background: rgb(45, 46, 81);
+  height: 100vh;
   width: 100%;
   position: fixed;
 }
