@@ -8,61 +8,34 @@ const ContenidoRestauranteApp = {
   imagen: Rest,
   URL: "https://lashamburguesasdeldon.netlify.app/",
   title: "Restaurante App",
-  title2: "EDUCACIÓN:",
+  title2: "Resumen:",
   lp: {
     li1: {
-      lip: "LIC. INGENIERÍA MECATRÓNICA:",
-      lis: "UNIVERSIDAD LA SALLE CUERNAVACA",
+      lip: "Descripción:",
+      lis: "Landing Page de restaurante que permite hacer reservaciones y que estas aparezcan en una página de administradores",
     },
     li2: {
-      lip: "BOOTCAMP ROGRAMACIÓN WEB FULLSTACK:",
-      lis: "UNIVERSIDAD UTEL",
+      lip: "Tecnología utilizada:",
+      lis: "React, React-Bootstrap, Firebase",
     },
-    li3: { lip: "INGLÉS AVANZADO:", lis: "CELE UAEM" },
+    li3: { lip: "URL:", lis: "https://lashamburguesasdeldon.netlify.app/" },
   },
 };
 const ContenidoEComerce = {
   imagen: Tlalli,
   URL: "https://tlalli-skincare.netlify.app/",
   title: "E-comerce",
-  title2: "Contact me:",
+  title2: "Resumen:",
   lp: {
     li1: {
-      lip: (
-        <a
-          href="mailto:arriaga.francisco@outlook.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <i className="fa-2x fa-at"> 👈🏽</i>
-        </a>
-      ),
-      lis: "arriaga.francisco@outlook.com",
+      lip: "Descripción:",
+      lis: "E-comerce que permite compras por paypal. Los usuarios y administradores pueden iniciar sesión o crear una nueva cuenta. A los administradores se les permite crear, borrar y editar productos.",
     },
     li2: {
-      lip: (
-        <a
-          href="https://www.linkedin.com/in/francisco-arriaga-velasco-7a74611b5/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <i className="fa-2x fa-brands fa-linkedin"> 👈🏽</i>
-        </a>
-      ),
-      lis: "https://www.linkedin.com/in/francisco-arriaga-velasco-7a74611b5/",
+      lip: "Tecnología utilizada:",
+      lis: "React, React-Bootstrap, Mongoose, paypal, Json-webtoken",
     },
-    li3: {
-      lip: (
-        <a
-          href="https://wa.me/qr/RU3P4HAMEZVCC1"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <i className="fa-2x fa-brands fa-whatsapp"> 👈🏽</i>
-        </a>
-      ),
-      lis: "https://wa.me/qr/RU3P4HAMEZVCC1",
-    },
+    li3: { lip: "URL:", lis: "https://tlalli-skincare.netlify.app/" },
   },
 };
 
@@ -70,17 +43,17 @@ const ContenidoWeatherMapApp = {
   imagen: Wma,
   URL: "https://arrrriaga.github.io/WeatherMAPapp/",
   title: "Weather Map App",
-  title2: "EDUCACIÓN:",
+  title2: "Resumen:",
   lp: {
     li1: {
-      lip: "LIC. INGENIERÍA MECATRÓNICA:",
-      lis: "UNIVERSIDAD LA SALLE CUERNAVACA",
+      lip: "Descripción:",
+      lis: "Herramienta que permite consultar la temperatura de cualquier parte del mundo y captura los datos en una gráfica con sólo arrastrar y soltar el puntero del mapa. Utiliza los servicios de google.",
     },
     li2: {
-      lip: "BOOTCAMP ROGRAMACIÓN WEB FULLSTACK:",
-      lis: "UNIVERSIDAD UTEL",
+      lip: "Tecnología utilizada:",
+      lis: "Servicios de google, HTML, CSS, Javascript y Bootstrap",
     },
-    li3: { lip: "INGLÉS AVANZADO:", lis: "CELE UAEM" },
+    li3: { lip: "URL:", lis: "https://arrrriaga.github.io/WeatherMAPapp/" },
   },
 };
 
@@ -88,17 +61,20 @@ const ContenidoLandingPageSkinCare = {
   imagen: Lpsk,
   URL: "https://arrrriaga.github.io/Landing_Page_SkinCare/",
   title: "Landing Page Skin Care",
-  title2: "EDUCACIÓN:",
+  title2: "Resumen:",
   lp: {
     li1: {
-      lip: "LIC. INGENIERÍA MECATRÓNICA:",
-      lis: "UNIVERSIDAD LA SALLE CUERNAVACA",
+      lip: "Descripción:",
+      lis: "Landing Page de restaurante para presentación de marca. Se destaca por la belleza del UI.",
     },
     li2: {
-      lip: "BOOTCAMP ROGRAMACIÓN WEB FULLSTACK:",
-      lis: "UNIVERSIDAD UTEL",
+      lip: "Tecnología utilizada:",
+      lis: "HTML, CSS, Bootstrap",
     },
-    li3: { lip: "INGLÉS AVANZADO:", lis: "CELE UAEM" },
+    li3: {
+      lip: "URL:",
+      lis: "https://arrrriaga.github.io/Landing_Page_SkinCare/",
+    },
   },
 };
 
