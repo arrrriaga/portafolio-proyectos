@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header>
       <motion.div
-        className="logo"
+        className="logo m-2"
         animate={{
           x: [3000, 0],
           y: [-50, -20, 0],

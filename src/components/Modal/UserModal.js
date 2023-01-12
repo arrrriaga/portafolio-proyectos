@@ -113,9 +113,12 @@ const UserModal = ({ closeModal, dataModal }) => {
               </Col>
             </Row>
           </Row>
-          <Row className="ButtonContainer">
-            <Col className="d-flex justify-content-center" xm={3}>
-              <button onClick={closeModal}>Close</button>
+
+          <Row className="ButtonContainer justify-content-center">
+            <Col className=" d-flex justify-content-center" xm={3}>
+              <button className="closeButton" onClick={closeModal}>
+                Close
+              </button>
             </Col>
           </Row>
         </Container>

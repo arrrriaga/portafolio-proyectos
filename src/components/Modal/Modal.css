@@ -57,7 +57,8 @@
   left: 0;
   right: 0;
 }
-.modal button {
+.modal .closeButton,
+.downloader {
   color: #f8e112;
   border-color: #f8e112;
   font-weight: bold;

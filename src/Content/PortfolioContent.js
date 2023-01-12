@@ -1,4 +1,3 @@
-import React from "react";
 import Tlalli from "../images/Tlalli.png";
 import Wma from "../images/Wma.png";
 import Rest from "../images/Rest.png";
