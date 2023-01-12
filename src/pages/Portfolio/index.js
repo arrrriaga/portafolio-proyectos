@@ -1,7 +1,6 @@
 import React from "react";
 import "./Portfolio.css";
 import { motion } from "framer-motion";
-
 import { Row, Col } from "react-bootstrap";
 
 const listItem = {
@@ -28,6 +27,13 @@ const containerVariants = {
 };
 
 const Portfolio = ({ setShowModal, setDataModal }) => {
+  const projects = [
+    "Restaurante App",
+    "E-comerce",
+    "Weather Map App",
+    "Landing Page Skin Care",
+  ];
+
   return (
     <motion.div
       className="portfolio-container"
@@ -47,70 +53,22 @@ const Portfolio = ({ setShowModal, setDataModal }) => {
         <Row className="RowBase d-flex justify-content-center">
           <Col className="d-flex justify-content-center">
             <ul>
-              <motion.li
-                key={"1"}
-                onClick={() => {
-                  setDataModal("About");
-                  setShowModal(true);
-                }}
-                variants={listItem}
-                whileHover="hover"
-                transition="visible"
-              >
-                <span>Restaurante App</span>
-              </motion.li>
-
-              <motion.li
-                key={"2"}
-                onClick={() => {
-                  setDataModal("Contact");
-                  setShowModal(true);
-                }}
-                variants={listItem}
-                whileHover="hover"
-                transition="visible"
-              >
-                <span>E-comerce</span>
-              </motion.li>
-
-              <motion.li
-                key={"3"}
-                onClick={() => {
-                  setDataModal("Contact");
-                  setShowModal(true);
-                }}
-                variants={listItem}
-                whileHover="hover"
-                transition="visible"
-              >
-                <span>Weather Map App</span>
-              </motion.li>
-
-              <motion.li
-                key={"4"}
-                onClick={() => {
-                  setDataModal("Contact");
-                  setShowModal(true);
-                }}
-                variants={listItem}
-                whileHover="hover"
-                transition="visible"
-              >
-                <span>Landing Page Skin Care</span>
-              </motion.li>
-
-              <motion.li
-                key={"5"}
-                onClick={() => {
-                  setDataModal("Contact");
-                  setShowModal(true);
-                }}
-                variants={listItem}
-                whileHover="hover"
-                transition="visible"
-              >
-                <span>Control Crud</span>
-              </motion.li>
+              {projects.map((project) => {
+                return (
+                  <motion.li
+                    key={project}
+                    onClick={() => {
+                      setDataModal(project);
+                      setShowModal(true);
+                    }}
+                    variants={listItem}
+                    whileHover="hover"
+                    transition="visible"
+                  >
+                    <span>{project}</span>
+                  </motion.li>
+                );
+              })}
             </ul>
           </Col>
         </Row>

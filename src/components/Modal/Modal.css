@@ -1,13 +1,13 @@
 .modal {
   max-width: 90vw;
-  max-height: 80vh;
+  max-height: 85vh;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto auto auto;
-  padding: 40px 20px;
+  padding: 15px 20px;
   background-color: rgb(34, 25, 84);
   border-radius: 10px;
   z-index: 2;
@@ -31,6 +31,15 @@
   object-fit: cover;
   object-position: top;
 }
+.modal .portfolioImage {
+  margin: auto;
+  margin-top: 10px;
+  width: 100%;
+  height: 40vh;
+  border-radius: 5%;
+  object-fit: cover;
+  object-position: top;
+}
 
 .modal li {
   font-size: 20px;
@@ -42,14 +51,18 @@
 .modalContainer {
   position: relative;
 }
-
-.modal button {
-  position: absolute;
+.ButtonContainer {
+  position: relative;
   bottom: 0;
+  left: 0;
+  right: 0;
+}
+.modal button {
   color: #f8e112;
   border-color: #f8e112;
   font-weight: bold;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .modal p {
@@ -61,6 +74,9 @@
   .modal .col-left {
     border-right: 0px solid rgba(255, 255, 255, 0.2);
     padding: 0px;
+  }
+  .modal .portfolioImage {
+    height: 200px;
   }
 
   .modal li,

@@ -2,7 +2,7 @@ import React from "react";
 import profile from "../images/profile.jpg";
 
 const ContenidoAbout2 = {
-  imagen: profile,
+  imagenProfile: profile,
   title: "👋🏽 Hi, I'm Francisco",
   title2: "EDUCACIÓN:",
   lp: {
@@ -18,9 +18,9 @@ const ContenidoAbout2 = {
   },
 };
 const ContenidoContact2 = {
-  imagen: profile,
+  imagenProfile: profile,
   title: "👋🏽 Hi, I'm Francisco",
-  title2: " Contact me:",
+  title2: "Contact me:",
   lp: {
     li1: {
       lip: (

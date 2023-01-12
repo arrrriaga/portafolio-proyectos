@@ -25,22 +25,38 @@ const FooterComponent = () => {
       <Container fluid className="FooterContainer text-center py-3">
         <Row>
           <Col>
-            <a href="https://wa.me/qr/RU3P4HAMEZVCC1">
+            <a
+              href="https://wa.me/qr/RU3P4HAMEZVCC1"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fa-2x fa-brands fa-whatsapp"></i>
             </a>
           </Col>
           <Col>
-            <a href="https://github.com/arrrriaga">
+            <a
+              href="https://github.com/arrrriaga"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fa-2x fa-brands fa-github"></i>
             </a>
           </Col>
           <Col>
-            <a href="https://www.linkedin.com/in/francisco-arriaga-velasco-7a74611b5/">
+            <a
+              href="https://www.linkedin.com/in/francisco-arriaga-velasco-7a74611b5/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fa-2x fa-brands fa-linkedin"></i>
             </a>
           </Col>
           <Col>
-            <a href="mailto:arriaga.francisco@outlook.com">
+            <a
+              href="mailto:arriaga.francisco@outlook.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fa-2x fa-at" />
             </a>
           </Col>
