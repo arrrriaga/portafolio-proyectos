@@ -9,20 +9,6 @@ const listItem = {
   visible: { type: "spring", stiffness: 300 },
 };
 
-const buttonVariants = {
-  hover: {
-    scale: 1.1,
-    x: 0,
-    textShadow: "0px 0px 8px rgb(255,255,255)",
-    boxShadow: "0px 0px 10px rgb(255,255,255)",
-    transition: {
-      duration: 0.6,
-      repeat: Infinity,
-      repeatType: "reverse",
-    },
-  },
-};
-
 const containerVariants = {
   hidden: {
     x: "100vw",
@@ -41,17 +27,7 @@ const containerVariants = {
   },
 };
 
-const nexVariants = {
-  hidden: {
-    x: "-100vw",
-  },
-  visible: {
-    x: 0,
-    transition: { type: "spring", stiffness: 120 },
-  },
-};
-
-const Base = ({ portafolioa, setShowModal, setDataModal }) => {
+const Base = ({ setShowModal, setDataModal }) => {
   return (
     <motion.div
       className="base-container"
@@ -84,7 +60,7 @@ const Base = ({ portafolioa, setShowModal, setDataModal }) => {
                 <span>About me</span>
               </motion.li>
 
-              <Link to="/toppings" style={{ color: "white" }}>
+              <Link to="/portfolio" style={{ color: "white" }}>
                 <motion.li
                   key={"2"}
                   variants={listItem}
@@ -108,33 +84,6 @@ const Base = ({ portafolioa, setShowModal, setDataModal }) => {
                 <span>Contact me</span>
               </motion.li>
             </ul>
-          </Col>
-        </Row>
-        <Row className="RowButton ">
-          <Col className="d-flex justify-content-center">
-            {portafolioa.base && (
-              <motion.div
-                className="next"
-                variants={nexVariants}
-                initial="hidden"
-                animate="visible"
-              >
-                <motion.button
-                  onClick={() => {
-                    setShowModal(true);
-                  }}
-                  variants={buttonVariants}
-                  whileHover="hover"
-                >
-                  Next
-                </motion.button>
-                {/* <Link to="/toppings">
-                  <motion.button variants={buttonVariants} whileHover="hover">
-                    Next
-                  </motion.button>
-                </Link> */}
-              </motion.div>
-            )}
           </Col>
         </Row>
       </div>

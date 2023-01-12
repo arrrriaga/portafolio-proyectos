@@ -1,6 +1,6 @@
 import React from "react";
 import "./Backdrop.css";
-import { Modal } from "../Modal";
+import { UserModal } from "../Modal/";
 // import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -29,7 +29,7 @@ const Backdrop = ({ showModal, setShowModal, dataModal }) => {
             initial="hidden"
             animate="visible"
           ></motion.div>
-          <Modal closeModal={closeModal} dataModal={dataModal} />
+          <UserModal closeModal={closeModal} dataModal={dataModal} />
         </>
       )}
     </AnimatePresence>

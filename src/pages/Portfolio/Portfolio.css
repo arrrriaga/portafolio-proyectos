@@ -1,18 +1,18 @@
 .container {
   height: 100%;
 }
-.toppings-container {
+.portfolio-container {
   height: 100%;
 }
 
-.toppings-container .RowTitle {
+.portfolio-container .RowTitle {
   height: 25%;
 }
-.toppings-container .RowBase {
+.portfolio-container .RowBase {
   height: 50%;
 }
 
-.toppings-container .RowBase ul {
+.portfolio-container .RowBase ul {
   width: 330px;
 }
 .RowBase li {
@@ -20,31 +20,31 @@
   font-size: 30px;
   padding-bottom: 10px;
 }
-.toppings-container .RowButton {
+.portfolio-container .RowButton {
   height: 30%;
 }
 
 @media (max-width: 600px) {
-  .toppings-container .RowBase li {
+  .portfolio-container .RowBase li {
     font-size: 20px;
     padding-bottom: 15px;
   }
-  .toppings-container .RowBase ul {
+  .portfolio-container .RowBase ul {
     width: 260px;
   }
 }
 @media (max-height: 800px) and (min-width: 700px) {
-  .toppings-container .RowBase li {
+  .portfolio-container .RowBase li {
     font-size: 20px;
     padding-bottom: 0px;
   }
-  .toppings-container .RowBase ul {
+  .portfolio-container .RowBase ul {
     width: 260px;
   }
-  .toppings-container .RowBase {
+  .portfolio-container .RowBase {
     height: 180px;
   }
-  .toppings-container .RowTitle {
+  .portfolio-container .RowTitle {
     height: auto;
   }
 }

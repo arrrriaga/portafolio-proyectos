@@ -5,34 +5,20 @@ import Header from "../components/Header";
 import { AnimatePresence } from "framer-motion";
 import HomePage from "../pages/home";
 import Base from "../pages/Base/index";
-import Toppings from "../pages/Portfolio";
-import Orders from "../pages/Oders";
+import Portfolio from "../pages/Portfolio";
+
 import { Backdrop } from "../components/BackDrop";
 import FooterComponent from "../components/Footer";
 
 const AppRouter = () => {
   const location = useLocation();
-  const [portafolioa, setportafolioa] = useState({ base: "", toppings: [] });
+
   const [dataModal, setDataModal] = useState("hola");
   const [showModal, setShowModal] = useState(false);
 
-  const addBase = (base) => {
-    setportafolioa({ ...portafolioa, base });
-  };
-
-  const addTopping = (topping) => {
-    let newToppings;
-    if (!portafolioa.toppings.includes(topping)) {
-      newToppings = [...portafolioa.toppings, topping];
-    } else {
-      newToppings = portafolioa.toppings.filter((item) => item !== topping);
-    }
-    setportafolioa({ ...portafolioa, toppings: newToppings });
-  };
   return (
     <div className="BodyContainer">
       <Header />
-      {/* <Modal showModal={showModal} setShowModal={setShowModal} /> */}
 
       <Backdrop
         showModal={showModal}
@@ -47,24 +33,16 @@ const AppRouter = () => {
             <Route
               path="/base"
               element={
-                <Base
-                  addBase={addBase}
-                  portafolioa={portafolioa}
+                <Base setShowModal={setShowModal} setDataModal={setDataModal} />
+              }
+            />
+            <Route
+              path="/portfolio"
+              element={
+                <Portfolio
                   setShowModal={setShowModal}
                   setDataModal={setDataModal}
                 />
-              }
-            />
-            <Route
-              path="/toppings"
-              element={
-                <Toppings addTopping={addTopping} portafolioa={portafolioa} />
-              }
-            />
-            <Route
-              path="/order"
-              element={
-                <Orders portafolioa={portafolioa} setShowModal={setShowModal} />
               }
             />
             <Route path="*" element={<Navigate to="/" />} />

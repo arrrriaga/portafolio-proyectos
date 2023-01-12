@@ -1,25 +1,12 @@
 import React from "react";
 import "./Portfolio.css";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import { Col, Row } from "react-bootstrap";
+
+import { Row, Col } from "react-bootstrap";
 
 const listItem = {
   hover: { scale: 1.1, originX: 0, color: "rgb(107, 127, 143)" },
   visible: { type: "spring", stiffness: 300 },
-};
-const buttonVariants = {
-  hover: {
-    scale: 1.1,
-    x: 0,
-    textShadow: "0px 0px 8px rgb(255,255,255)",
-    boxShadow: "0px 0px 10px rgb(255,255,255)",
-    transition: {
-      duration: 0.6,
-      repeat: Infinity,
-      repeatType: "reverse",
-    },
-  },
 };
 
 const containerVariants = {
@@ -40,18 +27,10 @@ const containerVariants = {
   },
 };
 
-const Toppings = ({ addTopping, portafolioa }) => {
-  let toppings = [
-    { title: "Restaurante App" },
-    { title: "E-comerce" },
-    { title: "Weather Map App" },
-    { title: "Landing Page Skin Care" },
-    { title: "Control CRUD" },
-  ];
-
+const Portfolio = ({ setShowModal, setDataModal }) => {
   return (
     <motion.div
-      className="toppings-container"
+      className="portfolio-container"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -60,40 +39,79 @@ const Toppings = ({ addTopping, portafolioa }) => {
       <div className="container">
         <Row className="RowTitle ">
           <Col className="d-flex justify-content-center align-items-center">
-            <h3 style={{ color: "rgb(107, 127, 143)" }}>PROJECTS PORTFOLIO</h3>
+            <h3 className="text-center" style={{ color: "rgb(107, 127, 143)" }}>
+              FULLSTACK WEB DEVELOPER
+            </h3>
           </Col>
         </Row>
         <Row className="RowBase d-flex justify-content-center">
           <Col className="d-flex justify-content-center">
-            {" "}
             <ul>
-              {toppings.map((topping) => {
-                let spanClass = portafolioa.toppings.includes(topping.title)
-                  ? "active"
-                  : "";
-                return (
-                  <motion.li
-                    key={topping.title}
-                    onClick={() => console.log(topping.title)}
-                    variants={listItem}
-                    whileHover="hover"
-                    transition="visible"
-                  >
-                    <span className={spanClass}>{topping.title}</span>
-                  </motion.li>
-                );
-              })}
-            </ul>
-          </Col>
-        </Row>
+              <motion.li
+                key={"1"}
+                onClick={() => {
+                  setDataModal("About");
+                  setShowModal(true);
+                }}
+                variants={listItem}
+                whileHover="hover"
+                transition="visible"
+              >
+                <span>Restaurante App</span>
+              </motion.li>
 
-        <Row className="RowButton">
-          <Col className="d-flex justify-content-center">
-            <Link to="/order">
-              <motion.button variants={buttonVariants} whileHover="hover">
-                Order
-              </motion.button>
-            </Link>
+              <motion.li
+                key={"2"}
+                onClick={() => {
+                  setDataModal("Contact");
+                  setShowModal(true);
+                }}
+                variants={listItem}
+                whileHover="hover"
+                transition="visible"
+              >
+                <span>E-comerce</span>
+              </motion.li>
+
+              <motion.li
+                key={"3"}
+                onClick={() => {
+                  setDataModal("Contact");
+                  setShowModal(true);
+                }}
+                variants={listItem}
+                whileHover="hover"
+                transition="visible"
+              >
+                <span>Weather Map App</span>
+              </motion.li>
+
+              <motion.li
+                key={"4"}
+                onClick={() => {
+                  setDataModal("Contact");
+                  setShowModal(true);
+                }}
+                variants={listItem}
+                whileHover="hover"
+                transition="visible"
+              >
+                <span>Landing Page Skin Care</span>
+              </motion.li>
+
+              <motion.li
+                key={"5"}
+                onClick={() => {
+                  setDataModal("Contact");
+                  setShowModal(true);
+                }}
+                variants={listItem}
+                whileHover="hover"
+                transition="visible"
+              >
+                <span>Control Crud</span>
+              </motion.li>
+            </ul>
           </Col>
         </Row>
       </div>
@@ -101,4 +119,4 @@ const Toppings = ({ addTopping, portafolioa }) => {
   );
 };
 
-export default Toppings;
+export default Portfolio;
