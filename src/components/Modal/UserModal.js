@@ -74,13 +74,31 @@ const UserModal = ({ closeModal, dataModal }) => {
                       alt="PROFILE"
                     ></img>
                   ) : (
-                    <a href={contenido2.URL} target="_blank" rel="noreferrer">
-                      <img
-                        className="portfolioImage"
-                        src={contenido2.imagen}
-                        alt="PROFILE"
-                      ></img>
-                    </a>
+                    <Row>
+                      <Col>
+                        <Row>
+                          <a
+                            href={contenido2.URL}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <img
+                              className="portfolioImage"
+                              src={contenido2.imagen}
+                              alt="Project"
+                            ></img>
+                          </a>
+                        </Row>
+                        <Row>
+                          <h6
+                            style={{ color: "#f8e112" }}
+                            className="subItem mt-2"
+                          >
+                            Click en la imagen para ir a la página
+                          </h6>
+                        </Row>
+                      </Col>
+                    </Row>
                   )}
                 </h3>
               </Col>
