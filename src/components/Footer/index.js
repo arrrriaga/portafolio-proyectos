@@ -55,7 +55,7 @@ const FooterComponent = () => {
                 variants={buttonVariants}
                 whileHover="hover"
               >
-                Descarga mi CV <i className="fa-2x fa-solid fa-arrow-down"></i>
+                Download my CV <i className="fa-2x fa-solid fa-arrow-down"></i>
                 <i className="fa-2x fa-solid fa-file-pdf"></i>
               </motion.button>
             </a>
@@ -100,7 +100,7 @@ const FooterComponent = () => {
           </Col>
         </Row>
         <Row>
-          <Col>Links de contacto</Col>
+          <Col>Contact links</Col>
         </Row>
       </Container>
     </motion.footer>

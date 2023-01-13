@@ -27,7 +27,7 @@ const Header = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
-        <h1>Francisco Arriaga Velasco</h1>
+        <h1>Francisco Arriaga Velasco </h1>
       </motion.div>
     </header>
   );

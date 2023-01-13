@@ -54,7 +54,7 @@ const containerVariants = {
 
 const Portfolio = ({ setShowModal, setDataModal }) => {
   const projects = [
-    "Restaurante App",
+    "Restaurant App",
     "E-comerce",
     "Weather Map App",
     "Landing Page Skin Care",
@@ -107,7 +107,7 @@ const Portfolio = ({ setShowModal, setDataModal }) => {
                     initial="hidden"
                     animate="visible"
                   >
-                    Regresar
+                    Go back
                   </motion.button>
                 </Link>
               </Col>

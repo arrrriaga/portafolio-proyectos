@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Col, Container, Row } from "react-bootstrap";
 import { ContenidoAbout2, ContenidoContact2 } from "../../Content/UserContent";
 import {
-  ContenidoRestauranteApp,
+  ContenidoRestaurantApp,
   ContenidoEComerce,
   ContenidoWeatherMapApp,
   ContenidoLandingPageSkinCare,
@@ -24,8 +24,8 @@ const UserModal = ({ closeModal, dataModal }) => {
         ? setearContent(ContenidoAbout2)
         : dataModal === "Contact"
         ? setearContent(ContenidoContact2)
-        : dataModal === "Restaurante App"
-        ? setearContent(ContenidoRestauranteApp)
+        : dataModal === "Restaurant App"
+        ? setearContent(ContenidoRestaurantApp)
         : dataModal === "E-comerce"
         ? setearContent(ContenidoEComerce)
         : dataModal === "Weather Map App"
@@ -94,7 +94,7 @@ const UserModal = ({ closeModal, dataModal }) => {
                             style={{ color: "#f8e112" }}
                             className="subItem mt-2"
                           >
-                            Click en la imagen para ir a la página
+                            Click on the image to go to the page
                           </h6>
                         </Row>
                       </Col>

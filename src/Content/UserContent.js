@@ -6,32 +6,32 @@ const ContenidoAbout2 = {
   title: "👋🏽 Hi, I'm Francisco",
   sections: {
     S1: {
-      title2: "EDUCACIÓN:",
+      title2: "EDUCATION:",
       lp: {
         li1: {
-          lip: "LIC. INGENIERÍA MECATRÓNICA:",
-          lis: "UNIVERSIDAD LA SALLE CUERNAVACA",
+          lip: "BACHELOR's DEGREE IN MECHATRONIC ENGINEERING:",
+          lis: "LA SALLE CUERNAVACA UNIVERSITY",
         },
         li2: {
-          lip: "BOOTCAMP ROGRAMACIÓN WEB FULLSTACK:",
-          lis: "UNIVERSIDAD UTEL",
+          lip: "BOOTCAMP: FULLSTACK WEB DEELOPMENT:",
+          lis: "UTEL UNIVERSITY",
         },
-        li3: { lip: "INGLÉS AVANZADO:", lis: "CELE UAEM" },
+        li3: { lip: "ADVANCED ENGLISH:", lis: "CELE UAEM" },
       },
     },
     S2: {
-      title2: "TECNOLOGÍAS:",
+      title2: "TECHNOLOGYS::",
       lp: {
         li1: {
-          lip: "LENGUAJES:",
+          lip: "LANGUAGES:",
           lis: "HTML5, CSS, JAVASCRIPT",
         },
         li2: {
-          lip: "LIBRERÍAS:",
+          lip: "LIBRARIES:",
           lis: "React, Bootstrap, MongoDB, Firebase, JsonWebToken ",
         },
         li3: {
-          lip: "ENTORNOS:",
+          lip: "ENVIROMENTS:",
           lis: "Nodejs ",
         },
         li4: {
@@ -41,15 +41,15 @@ const ContenidoAbout2 = {
       },
     },
     S3: {
-      title2: "EXPERIENCIA LABORAL:",
+      title2: "WORK EXPERIENCE:",
       lp: {
         li1: {
-          lip: "Empresa: UNILEVER - R&D (Investigación y desarrollo):",
-          lis: "INGENIERO DE EMPAQUE - LÍDER TÉCNICO DE PROYECTO | MAYO 2021 - ACTUALIDAD",
+          lip: "COMPANY: UNILEVER - R&D (RESEARCH AND DEVELOPMENT):",
+          lis: "PACKAGING ENGINEER - TECHNICAL PROJECT LEADER | MAY 2021 - PRESENT",
         },
         li2: {
-          lip: "Empresa: UNILEVER - Intern en Investigación y desarrollo:",
-          lis: "PASANTE DE INVESTIGACIÓN Y DESARROLLO - SKIN CARE | SEPTIEMBRE 2019 - MAYO 2021",
+          lip: "COMPANY: UNILEVER - RESEARCH AND DEVELOPMENT INTERN:",
+          lis: "RESEARCH AND DEVELOPMENT - SKIN CARE | SEPTEMBER 2019 - MAY 2021",
         },
       },
     },
