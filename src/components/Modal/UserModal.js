@@ -104,7 +104,38 @@ const UserModal = ({ closeModal, dataModal }) => {
               </Col>
             </Row>
 
-            <Row className="cuerpo d-flex justify-content-center ">
+            {contenido2.sections
+              ? Object.values(contenido2.sections).map((item) => (
+                  <Row className="cuerpo d-flex justify-content-center mb-3 ">
+                    <Col
+                      xm={12}
+                      md={3}
+                      className="col-left d-flex justify-content-center align-items-center"
+                    >
+                      <h4 className="text-center">{item.title2}</h4>
+                    </Col>
+                    <Col xm={12} md={6}>
+                      <Row>
+                        <br />
+                        <ul>
+                          {item.lp
+                            ? Object.values(item.lp).map((lp) => (
+                                <li key={lp.lip.a}>
+                                  {lp.lip}
+                                  <ul>
+                                    <li className="subItem">{lp.lis}</li>
+                                  </ul>
+                                </li>
+                              ))
+                            : ""}
+                        </ul>
+                      </Row>
+                    </Col>
+                  </Row>
+                ))
+              : " "}
+
+            {/* <Row className="cuerpo d-flex justify-content-center ">
               <Col
                 xm={12}
                 md={3}
@@ -129,7 +160,7 @@ const UserModal = ({ closeModal, dataModal }) => {
                   </ul>
                 </Row>
               </Col>
-            </Row>
+            </Row> */}
           </Row>
 
           <Row className="ButtonContainer justify-content-center">
