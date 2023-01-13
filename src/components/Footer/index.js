@@ -49,16 +49,14 @@ const FooterComponent = () => {
                 display: "flex",
                 alignItems: "center",
               }}
-              variants={buttonVariants}
-              whileHover="hover"
             >
               <motion.button
                 className="text-center text-justify align-items-center "
                 variants={buttonVariants}
                 whileHover="hover"
               >
-                Descarga mi CV <i class="fa-2x fa-solid fa-arrow-down"></i>
-                <i class="fa-2x fa-solid fa-file-pdf"></i>
+                Descarga mi CV <i className="fa-2x fa-solid fa-arrow-down"></i>
+                <i className="fa-2x fa-solid fa-file-pdf"></i>
               </motion.button>
             </a>
           </Col>
@@ -97,7 +95,7 @@ const FooterComponent = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fa-2x fa-solid fa-envelope"></i>
+              <i className="fa-2x fa-solid fa-envelope"></i>
             </a>
           </Col>
         </Row>

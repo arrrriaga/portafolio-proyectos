@@ -89,7 +89,7 @@ const ContenidoContact2 = {
         li4: {
           lip: (
             <h6>
-              <i class="mt-3 fa-2x fa-solid fa-mobile-screen-button"></i>
+              <i className="mt-3 fa-2x fa-solid fa-mobile-screen-button"></i>
               {"   "}
               7775142307
             </h6>

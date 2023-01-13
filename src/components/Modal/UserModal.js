@@ -120,7 +120,7 @@ const UserModal = ({ closeModal, dataModal }) => {
                         <ul>
                           {item.lp
                             ? Object.values(item.lp).map((lp) => (
-                                <li key={lp.lip.a}>
+                                <li key={lp.lip + lp.lis}>
                                   {lp.lip}
                                   <ul>
                                     <li className="subItem">{lp.lis}</li>
