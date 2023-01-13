@@ -28,7 +28,7 @@ const ContenidoAbout2 = {
         },
         li2: {
           lip: "LIBRERÍAS:",
-          lis: "React, Bootstrap, MongoDB, Firebase, express, nodejs, JsonWebToken ",
+          lis: "React, Bootstrap, MongoDB, Firebase, JsonWebToken ",
         },
         li3: {
           lip: "ENTORNOS:",

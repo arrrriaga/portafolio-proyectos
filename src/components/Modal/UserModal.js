@@ -105,8 +105,11 @@ const UserModal = ({ closeModal, dataModal }) => {
             </Row>
 
             {contenido2.sections
-              ? Object.values(contenido2.sections).map((item) => (
-                  <Row className="cuerpo d-flex justify-content-center mb-3 ">
+              ? Object.values(contenido2.sections).map((item, index) => (
+                  <Row
+                    key={index}
+                    className="cuerpo d-flex justify-content-center mb-3 "
+                  >
                     <Col
                       xm={12}
                       md={3}
@@ -119,11 +122,16 @@ const UserModal = ({ closeModal, dataModal }) => {
                         <br />
                         <ul>
                           {item.lp
-                            ? Object.values(item.lp).map((lp) => (
-                                <li key={lp.lip + lp.lis}>
+                            ? Object.values(item.lp).map((lp, index) => (
+                                <li key={index + lp.lip}>
                                   {lp.lip}
-                                  <ul>
-                                    <li className="subItem">{lp.lis}</li>
+                                  <ul key={lp.lip + "ul"}>
+                                    <li
+                                      className="subItem"
+                                      key={index + lp.lis + "li"}
+                                    >
+                                      {lp.lis}
+                                    </li>
                                   </ul>
                                 </li>
                               ))
@@ -134,33 +142,6 @@ const UserModal = ({ closeModal, dataModal }) => {
                   </Row>
                 ))
               : " "}
-
-            {/* <Row className="cuerpo d-flex justify-content-center ">
-              <Col
-                xm={12}
-                md={3}
-                className="col-left d-flex justify-content-center align-items-center"
-              >
-                <h4 className="text-center">{contenido2.title2}</h4>
-              </Col>
-              <Col xm={12} md={6}>
-                <Row>
-                  <br />
-                  <ul>
-                    {contenido2.lp
-                      ? Object.values(contenido2.lp).map((item) => (
-                          <li key={item.lip.a}>
-                            {item.lip}
-                            <ul>
-                              <li className="subItem">{item.lis}</li>
-                            </ul>
-                          </li>
-                        ))
-                      : ""}
-                  </ul>
-                </Row>
-              </Col>
-            </Row> */}
           </Row>
 
           <Row className="ButtonContainer justify-content-center">
