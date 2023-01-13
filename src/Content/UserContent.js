@@ -24,7 +24,7 @@ const ContenidoAbout2 = {
       lp: {
         li1: {
           lip: "Lenguajes:",
-          lis: "HTML5, CSS, JAVASCRIPT, PYTHON3",
+          lis: "HTML5, CSS, JAVASCRIPT",
         },
         li2: {
           lip: "Librerías:",
@@ -65,7 +65,8 @@ const ContenidoContact2 = {
         li1: {
           lip: (
             <a href="mailto:arriaga.francisco@outlook.com">
-              <i className="fa-2x fa-at"> 👈🏽</i>
+              <i className="fa-2x fa-at"> 👈🏽 </i> Presiona para enviarme un
+              correo
             </a>
           ),
           lis: "arriaga.francisco@outlook.com",
@@ -73,7 +74,8 @@ const ContenidoContact2 = {
         li2: {
           lip: (
             <a href="https://www.linkedin.com/in/francisco-arriaga-velasco-7a74611b5/">
-              <i className="fa-2x fa-brands fa-linkedin"> 👈🏽</i>
+              <i className="fa-2x fa-brands fa-linkedin">👈🏽 </i> Presiona para
+              ir a mi linkedin
             </a>
           ),
           lis: "https://www.linkedin.com/in/francisco-arriaga-velasco-7a74611b5/",
@@ -81,7 +83,8 @@ const ContenidoContact2 = {
         li3: {
           lip: (
             <a href="https://wa.me/qr/RU3P4HAMEZVCC1">
-              <i className="fa-2x fa-brands fa-whatsapp"> 👈🏽</i>
+              <i className="fa-2x fa-brands fa-whatsapp"> 👈🏽 </i> Presiona para
+              enviarme un whatsapp
             </a>
           ),
           lis: "https://wa.me/qr/RU3P4HAMEZVCC1",

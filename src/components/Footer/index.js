@@ -57,7 +57,8 @@ const FooterComponent = () => {
                 variants={buttonVariants}
                 whileHover="hover"
               >
-                Descarga un resumen <i class="fa-2x fa-solid fa-arrow-down"></i>
+                Descarga mi CV en PDF{" "}
+                <i class="fa-2x fa-solid fa-arrow-down"></i>
                 <i class="fa-2x fa-solid fa-file-pdf"></i>
               </motion.button>
             </a>
