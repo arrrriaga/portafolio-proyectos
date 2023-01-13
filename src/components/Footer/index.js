@@ -57,8 +57,7 @@ const FooterComponent = () => {
                 variants={buttonVariants}
                 whileHover="hover"
               >
-                Descarga mi CV en PDF{" "}
-                <i class="fa-2x fa-solid fa-arrow-down"></i>
+                Descarga mi CV <i class="fa-2x fa-solid fa-arrow-down"></i>
                 <i class="fa-2x fa-solid fa-file-pdf"></i>
               </motion.button>
             </a>
@@ -98,7 +97,7 @@ const FooterComponent = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fa-2x fa-at" />
+              <i class="fa-2x fa-solid fa-envelope"></i>
             </a>
           </Col>
         </Row>

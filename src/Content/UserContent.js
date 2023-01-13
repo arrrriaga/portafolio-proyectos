@@ -20,22 +20,22 @@ const ContenidoAbout2 = {
       },
     },
     S2: {
-      title2: "Tecnologías:",
+      title2: "TECNOLOGÍAS:",
       lp: {
         li1: {
-          lip: "Lenguajes:",
+          lip: "LENGUAJES:",
           lis: "HTML5, CSS, JAVASCRIPT",
         },
         li2: {
-          lip: "Librerías:",
+          lip: "LIBRERÍAS:",
           lis: "React, Bootstrap, MongoDB, Firebase, express, nodejs, JsonWebToken ",
         },
         li3: {
-          lip: "Entornos:",
+          lip: "ENTORNOS:",
           lis: "Nodejs ",
         },
         li4: {
-          lip: "Frameworks:",
+          lip: "FRAMEWORKS:",
           lis: "Express",
         },
       },
@@ -65,7 +65,7 @@ const ContenidoContact2 = {
         li1: {
           lip: (
             <a href="mailto:arriaga.francisco@outlook.com">
-              <i className="fa-2x fa-at"> 👈🏽 </i> Correo
+              <i className="mt-3 fa-2x fa-solid fa-envelope"> 👈🏽 </i> Correo
             </a>
           ),
           lis: "arriaga.francisco@outlook.com",
@@ -73,7 +73,7 @@ const ContenidoContact2 = {
         li2: {
           lip: (
             <a href="https://www.linkedin.com/in/francisco-arriaga-velasco-7a74611b5/">
-              <i className="fa-2x fa-brands fa-linkedin">👈🏽 </i> Linkedin
+              <i className="mt-3 fa-2x fa-brands fa-linkedin"> 👈🏽 </i> Linkedin
             </a>
           ),
           lis: "https://www.linkedin.com/in/francisco-arriaga-velasco-7a74611b5/",
@@ -81,10 +81,19 @@ const ContenidoContact2 = {
         li3: {
           lip: (
             <a href="https://wa.me/qr/RU3P4HAMEZVCC1">
-              <i className="fa-2x fa-brands fa-whatsapp"> 👈🏽 </i> Whatsapp
+              <i className="mt-3 fa-2x fa-brands fa-whatsapp"> 👈🏽 </i> Whatsapp
             </a>
           ),
           lis: "https://wa.me/qr/RU3P4HAMEZVCC1",
+        },
+        li4: {
+          lip: (
+            <h6>
+              <i class="mt-3 fa-2x fa-solid fa-mobile-screen-button"></i>
+              {"   "}
+              7775142307
+            </h6>
+          ),
         },
       },
     },

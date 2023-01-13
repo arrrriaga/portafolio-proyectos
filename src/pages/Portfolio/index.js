@@ -2,6 +2,32 @@ import React from "react";
 import "./Portfolio.css";
 import { motion } from "framer-motion";
 import { Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+const buttonVariants = {
+  hidden: {
+    x: "-100vw",
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { type: "spring", stiffness: 120 },
+  },
+
+  hover: {
+    scale: 1.1,
+    origin: 0,
+    x: 0,
+    rotate: 0,
+    textShadow: "0px 0px 8px rgb(255,255,255)",
+    boxShadow: "0px 0px 10px rgb(255,255,255)",
+    transition: {
+      duration: 0.6,
+      repeat: Infinity,
+      repeatType: "reverse",
+    },
+  },
+};
 
 const listItem = {
   hover: { scale: 1.1, originX: 0, color: "rgb(107, 127, 143)" },
@@ -71,6 +97,22 @@ const Portfolio = ({ setShowModal, setDataModal }) => {
               })}
             </ul>
           </Col>
+          <Row>
+            <Row>
+              <Col className="d-flex justify-content-center">
+                <Link to={"/base"}>
+                  <motion.button
+                    variants={buttonVariants}
+                    whileHover="hover"
+                    initial="hidden"
+                    animate="visible"
+                  >
+                    Regresar
+                  </motion.button>
+                </Link>
+              </Col>
+            </Row>
+          </Row>
         </Row>
       </div>
     </motion.div>
