@@ -58,9 +58,9 @@ const ContenidoAbout2 = {
 const ContenidoContact2 = {
   imagenProfile: profile,
   title: "👋🏽 Hi, I'm Francisco",
-  title2: "Contact me:",
   sections: {
     s1: {
+      title2: "Contact me:",
       lp: {
         li1: {
           lip: (
