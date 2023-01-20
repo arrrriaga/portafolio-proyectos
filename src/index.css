@@ -85,23 +85,3 @@ li span.active {
 }
 
 /* pages */
-.home h2 {
-  /* font-size: 80%;
-  margin-bottom: 30px; */
-}
-.home.container,
-.order.container {
-  /* text-align: center;
-  max-width: 40vw; */
-}
-.home button {
-  /* color: white;
-  padding: 15px 30px;
-  font-size: 1.4em;
-  border: 3px solid white;
-  margin: 30px 20px; */
-}
-.order p {
-  margin: 20px auto;
-}
-/* components */
