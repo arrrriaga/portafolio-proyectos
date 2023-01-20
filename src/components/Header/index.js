@@ -12,7 +12,7 @@ const Header = () => {
         <Row>
           <Col>
             <Row>
-              <Col className="d-flex justify-content-start align-items-center">
+              <Col className="titleContainetHeader d-flex justify-content-start ">
                 <motion.div
                   className="logo m-2"
                   animate={{

@@ -5,7 +5,9 @@ header {
   padding: 10px;
   align-items: center;
 }
-
+.titleContainetHeader {
+  align-items: center;
+}
 .profileP {
   width: 120px;
   height: 120px;
@@ -43,5 +45,11 @@ header {
   }
   .title h1 {
     font-size: 1em;
+  }
+}
+@media (max-height: 275px) {
+  .titleContainetHeader {
+    align-items: flex-start;
+    margin-top: 10px;
   }
 }

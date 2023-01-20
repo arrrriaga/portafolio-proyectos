@@ -26,3 +26,11 @@
     height: 5px;
   }
 }
+@media (max-height: 275px) {
+  .titleContainetHeader {
+    align-items: flex-start;
+  }
+  .downloadButtonFooter {
+    visibility: hidden;
+  }
+}
