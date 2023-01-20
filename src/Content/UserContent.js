@@ -20,7 +20,7 @@ const ContenidoAbout2 = {
       },
     },
     S2: {
-      title2: "TECHNOLOGYS::",
+      title2: "TECHNOLOGYS:",
       lp: {
         li1: {
           lip: "LANGUAGES:",
