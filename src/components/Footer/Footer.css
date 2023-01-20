@@ -19,6 +19,10 @@
   }
   .FooterContainer {
     padding: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+  }
+  .linksText {
+    visibility: hidden;
+    height: 5px;
   }
 }

@@ -34,6 +34,14 @@ header {
 
 @media (max-height: 600px) {
   .subtitleFooter {
-    opacity: 0 !important;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .profileP {
+    width: 85px;
+    height: 85px;
+  }
+  .title h1 {
+    font-size: 1em;
   }
 }

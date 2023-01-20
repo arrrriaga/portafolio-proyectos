@@ -103,7 +103,7 @@ const FooterComponent = () => {
           </Col>
         </Row>
         <Row>
-          <Col>Contact links</Col>
+          <Col className="linksText">Contact links</Col>
         </Row>
       </Container>
     </motion.footer>
