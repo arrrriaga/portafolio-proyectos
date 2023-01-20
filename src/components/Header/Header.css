@@ -34,7 +34,6 @@ header {
 
 @media (max-height: 600px) {
   .subtitleFooter {
-    background-color: red;
     opacity: 0 !important;
   }
 }

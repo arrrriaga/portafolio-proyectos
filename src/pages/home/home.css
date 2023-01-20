@@ -7,3 +7,9 @@
     font-size: 5em;
   }
 }
+
+@media (max-height: 630px) {
+  .startButtonHome button {
+    padding: 5px 15px;
+  }
+}

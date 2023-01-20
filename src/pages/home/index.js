@@ -51,11 +51,11 @@ const Home = () => {
           <Row>
             <Col>
               <motion.div
-                className="d-flex justify-content-center mt-3"
+                className="startButtonHome d-flex justify-content-center mt-3"
                 transition={{ duration: 2.5 }}
                 animate={{
                   scale: [0, 0, 0.8, 0.8, 1.5],
-                  y: [100, 100, 100, -20],
+                  y: [100, 100, 100, 0],
                 }}
               >
                 <Link to="/base">
