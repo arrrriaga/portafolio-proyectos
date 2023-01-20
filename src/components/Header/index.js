@@ -12,7 +12,7 @@ const Header = () => {
         <Row>
           <Col>
             <Row>
-              <Col xs={3} sm={2} lg={1}>
+              <Col className="d-flex justify-content-start align-items-center">
                 <motion.div
                   className="logo m-2"
                   animate={{
@@ -28,8 +28,6 @@ const Header = () => {
                     alt="PROFILE"
                   ></motion.img>
                 </motion.div>
-              </Col>
-              <Col className="d-flex justify-content-start align-items-center">
                 <motion.div
                   className="title"
                   transition={{ delay: 2, duration: 2 }}

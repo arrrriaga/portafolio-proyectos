@@ -7,8 +7,8 @@ header {
 }
 
 .profileP {
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
@@ -27,12 +27,12 @@ header {
     font-size: 1em;
   }
   .profileP {
-    width: 75px;
-    height: 75px;
+    width: 85px;
+    height: 85px;
   }
 }
 
-@media (max-height: 570px) {
+@media (max-height: 600px) {
   .subtitleFooter {
     background-color: red;
     opacity: 0 !important;
