@@ -65,7 +65,7 @@ const ContenidoContact2 = {
         li1: {
           lip: (
             <a href="mailto:arriaga.francisco@outlook.com">
-              <i className="mt-3 fa-2x fa-solid fa-envelope"> 👈🏽 </i> Correo
+              <i className="mt-3 fa-2x fa-solid fa-envelope"> 👈🏽 </i> Email
             </a>
           ),
           lis: "arriaga.francisco@outlook.com",
