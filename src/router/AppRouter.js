@@ -17,7 +17,7 @@ const AppRouter = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div className="BodyContainer">
+    <>
       <Header />
 
       <Backdrop
@@ -51,7 +51,7 @@ const AppRouter = () => {
       </main>
 
       <FooterComponent />
-    </div>
+    </>
   );
 };
 

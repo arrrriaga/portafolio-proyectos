@@ -1,12 +1,14 @@
 header {
   display: flex;
+  position: fixed;
+  width: 100%;
   padding: 10px;
   align-items: center;
 }
 
 .profileP {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
@@ -19,9 +21,20 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 10px;
 }
-
-@media (max-width: 600px) {
+/* Tamaño reducido para dispositivos móviles */
+@media (max-width: 450px) {
   .title h1 {
-    font-size: 1em; /* Tamaño reducido para dispositivos móviles */
+    font-size: 1em;
+  }
+  .profileP {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (max-height: 570px) {
+  .subtitleFooter {
+    background-color: red;
+    opacity: 0 !important;
   }
 }

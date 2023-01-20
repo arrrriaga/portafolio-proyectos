@@ -1,50 +1,41 @@
-.container {
-  height: 100%;
+.portfolio-li {
+  font-size: 2em;
 }
-.portfolio-container {
-  height: 100%;
+.portfolio-li li {
+  padding: 10px;
 }
-
-.portfolio-container .RowTitle {
-  height: 25%;
-}
-.portfolio-container .RowBase {
-  height: 50%;
-}
-
-.portfolio-container .RowBase ul {
-  width: 330px;
-}
-.RowBase li {
-  cursor: pointer;
-  font-size: 30px;
-  padding-bottom: 10px;
-}
-.portfolio-container .RowButton {
-  height: 30%;
+.portafolioButton {
+  margin-top: 20px;
 }
 
 @media (max-width: 600px) {
-  .portfolio-container .RowBase li {
-    font-size: 20px;
-    padding-bottom: 15px;
+  .portfolio-li {
+    font-size: 1.6em;
   }
-  .portfolio-container .RowBase ul {
-    width: 260px;
+  .portfolio-li li {
+    padding: 8px;
   }
 }
-@media (max-height: 800px) and (min-width: 700px) {
-  .portfolio-container .RowBase li {
-    font-size: 20px;
-    padding-bottom: 0px;
+
+@media (max-height: 600px) {
+  .portfolio-li {
+    font-size: 1.3em;
   }
-  .portfolio-container .RowBase ul {
-    width: 260px;
+  .portfolio-li li {
+    padding: 5px;
   }
-  .portfolio-container .RowBase {
-    height: 180px;
+}
+
+@media (max-height: 395px) {
+  .portfolioButton {
+    padding: 2px 10px;
+    font-size: 0.7em;
+    margin-bottom: 5px;
   }
-  .portfolio-container .RowTitle {
-    height: auto;
+  .portfolio-li li {
+    padding: 3px;
+  }
+  .portfolio-li {
+    font-size: 0.9em;
   }
 }

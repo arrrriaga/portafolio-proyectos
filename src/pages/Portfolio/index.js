@@ -1,7 +1,7 @@
 import React from "react";
 import "./Portfolio.css";
 import { motion } from "framer-motion";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 const buttonVariants = {
   hidden: {
@@ -61,47 +61,42 @@ const Portfolio = ({ setShowModal, setDataModal }) => {
   ];
 
   return (
-    <motion.div
-      className="portfolio-container"
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-      exit="exit"
-    >
-      <div className="container">
-        <Row className="RowTitle ">
-          <Col className="d-flex justify-content-center align-items-center">
-            <h3 className="text-center" style={{ color: "rgb(107, 127, 143)" }}>
-              FULLSTACK WEB DEVELOPER
-            </h3>
-          </Col>
-        </Row>
-        <Row className="RowBase d-flex justify-content-center">
-          <Col className="d-flex justify-content-center">
-            <ul>
-              {projects.map((project) => {
-                return (
-                  <motion.li
-                    key={project}
-                    onClick={() => {
-                      setDataModal(project);
-                      setShowModal(true);
-                    }}
-                    variants={listItem}
-                    whileHover="hover"
-                    transition="visible"
-                  >
-                    <span>{project}</span>
-                  </motion.li>
-                );
-              })}
-            </ul>
-          </Col>
-          <Row>
+    <Container>
+      <Row className="Row1">
+        <Col className="d-flex flex-col align-items-center justify-content-center">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          >
+            <Row>
+              <Col className="portfolio-li d-flex justify-content-center">
+                <ul>
+                  {projects.map((project) => {
+                    return (
+                      <motion.li
+                        key={project}
+                        onClick={() => {
+                          setDataModal(project);
+                          setShowModal(true);
+                        }}
+                        variants={listItem}
+                        whileHover="hover"
+                        transition="visible"
+                      >
+                        <span>{project}</span>
+                      </motion.li>
+                    );
+                  })}
+                </ul>
+              </Col>
+            </Row>
             <Row>
               <Col className="d-flex justify-content-center">
                 <Link to={"/base"}>
                   <motion.button
+                    className="portfolioButton"
                     variants={buttonVariants}
                     whileHover="hover"
                     initial="hidden"
@@ -112,10 +107,10 @@ const Portfolio = ({ setShowModal, setDataModal }) => {
                 </Link>
               </Col>
             </Row>
-          </Row>
-        </Row>
-      </div>
-    </motion.div>
+          </motion.div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

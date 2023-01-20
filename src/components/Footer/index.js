@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.css";
 import { motion } from "framer-motion";
 import { Col, Container, Row } from "react-bootstrap";
 
@@ -38,9 +39,9 @@ const FooterComponent = () => {
       initial="hidden"
       animate="visible"
     >
-      <Container fluid className="FooterContainer text-center py-3">
+      <Container fluid className="FooterContainer text-center ">
         <Row>
-          <Col className="d-flex justify-content-center mb-3">
+          <Col className="d-flex justify-content-center">
             <a
               href="./Francisco_Arriaga_Fullstack_Web.pdf"
               download
@@ -51,12 +52,14 @@ const FooterComponent = () => {
               }}
             >
               <motion.button
-                className="text-center text-justify align-items-center "
+                className="downloadButtonFooter"
                 variants={buttonVariants}
                 whileHover="hover"
               >
-                Download my CV <i className="fa-2x fa-solid fa-arrow-down"></i>
-                <i className="fa-2x fa-solid fa-file-pdf"></i>
+                Download my CV
+                <i> </i>
+                <i className=" fa-solid fa-arrow-down fa-xl"></i>
+                <i className="fa-solid fa-file-pdf fa-xl"></i>
               </motion.button>
             </a>
           </Col>

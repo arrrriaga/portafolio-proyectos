@@ -43,6 +43,7 @@
 
 .modal li {
   font-size: 20px;
+  padding: 0px;
 }
 .modal .subItem {
   font-size: 12px !important;

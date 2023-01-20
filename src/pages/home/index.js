@@ -35,7 +35,7 @@ const containerVariants = {
   exit: {
     scale: 0.9,
     x: [0, 600, -3000],
-    y: [35, 200, 0, 0],
+    y: [0, 200, -70, -70],
     rotate: [0, -90, -90],
     transition: {
       duration: 1.3,
@@ -46,34 +46,16 @@ const containerVariants = {
 const Home = () => {
   return (
     <Container>
-      <Row className="Row0">
-        <Col>
-          <Row className="Row1 d-flex justify-content-center">
-            <Col xs={6} sm={12}>
+      <Row className="Row1 ">
+        <Col className="d-flex flex-col align-items-center justify-content-center">
+          <Row>
+            <Col>
               <motion.div
-                className="text-center"
+                className="d-flex justify-content-center mt-3"
                 transition={{ duration: 2.5 }}
                 animate={{
-                  scale: [0, 0, 1, 2, 2],
-                  opacity: [0, 1],
-                  y: [-1000, -1000, 200, 35],
-                  color: "#ffff",
-                }}
-                variants={containerVariants}
-                exit="exit"
-              >
-                <h2> Welcome to my Portfolio</h2>
-              </motion.div>
-            </Col>
-          </Row>
-          <Row className="Row2">
-            <Col xs={12} sm={12}>
-              <motion.div
-                className="d-flex justify-content-center"
-                transition={{ duration: 2.5 }}
-                animate={{
-                  scale: [0, 1, 1, 1, 1.5],
-                  y: [100, 100, 100, -100],
+                  scale: [0, 0, 0.8, 0.8, 1.5],
+                  y: [100, 100, 100, -20],
                 }}
               >
                 <Link to="/base">
@@ -92,6 +74,24 @@ const Home = () => {
                     Start
                   </motion.button>
                 </Link>
+              </motion.div>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <motion.div
+                className="welcomeTitle text-center"
+                transition={{ duration: 2.5 }}
+                animate={{
+                  scale: [0.1, 0.1, 0.5, 0.5, 1],
+                  opacity: [0, 1],
+                  y: [-1000, -1000, 200, 0],
+                  color: "#ffff",
+                }}
+                variants={containerVariants}
+                exit="exit"
+              >
+                <h2> Welcome to my Portfolio</h2>
               </motion.div>
             </Col>
           </Row>

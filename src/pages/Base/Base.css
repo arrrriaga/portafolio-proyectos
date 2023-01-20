@@ -1,57 +1,12 @@
-.container {
-  height: 100%;
-}
-.base-container {
-  height: 100%;
-}
-
-.base-container .RowTitle {
-  height: 25%;
-}
-.base-container .RowBase {
-  height: 50%;
-}
-
-.base-container .RowBase ul {
-  width: 330px;
-}
-.base-container .RowBase li {
-  cursor: pointer;
-  font-size: 40px;
-  padding-bottom: 20px;
-}
-.base-container .RowButton {
-  height: 30%;
+.base-li {
+  font-size: 3em;
 }
 
 @media (max-height: 600px) {
-  .base-container .RowBase li {
-    font-size: 20px;
-    padding-bottom: 0px;
+  .base-li {
+    font-size: 2em;
   }
-  .base-container .RowBase ul {
-    width: 260px;
-  }
-  .base-container .RowBase {
-    height: 180px;
-  }
-  .base-container .RowTitle {
-    height: auto;
-  }
-}
-
-@media (max-height: 800px) and (min-width: 700px) {
-  .base-container .RowBase li {
-    font-size: 20px;
-    padding-bottom: 0px;
-  }
-  .base-container .RowBase ul {
-    width: 260px;
-  }
-  .base-container .RowBase {
-    height: 180px;
-  }
-  .base-container .RowTitle {
-    height: auto;
+  .base-li li {
+    padding: 0px;
   }
 }
