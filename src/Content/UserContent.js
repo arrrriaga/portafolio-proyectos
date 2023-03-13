@@ -19,6 +19,54 @@ const ContenidoAbout2 = {
         li3: { lip: "ADVANCED ENGLISH:", lis: "CELE UAEM" },
       },
     },
+    S1_1: {
+      title2: "CERTIFICATIONS:",
+      lp: {
+        li1: {
+          lip: "Definitive HTML course",
+          lis: "PLATZI",
+        },
+        li2: {
+          lip: "Basic javascript course",
+          lis: "PLATZI",
+        },
+        li3: { lip: "Introductory course to react", lis: "PLATZI" },
+        li4: {
+          lip: "Python 3 master course",
+          lis: "UDEMY",
+        },
+        li5: {
+          lip: "Web fullstack developer",
+          lis: "UTEL UNIVERSITY",
+        },
+        li5_1: {
+          lip: "Git and GitHub",
+          lis: "PLATZI",
+        },
+        li5_2: {
+          lip: "SCRUM master",
+          lis: "PLATZI",
+        },
+        li5_3: {
+          lip: "Introduction to DevOps",
+          lis: "PLATZI",
+        },
+        li6: { lip: "E-comerce application", lis: "UTEL UNIVERSITY" },
+        li7: {
+          lip: "Dashboard",
+          lis: "UTEL UNIVERSITY",
+        },
+        li8: {
+          lip: "Restaurant APP",
+          lis: "UTEL UNIVERSITY",
+        },
+        li9: { lip: "CRUD aplication", lis: "UTEL" },
+        li10: {
+          lip: "Landing Pages",
+          lis: "UTEL UNIVERSITY",
+        },
+      },
+    },
     S2: {
       title2: "TECHNOLOGYS:",
       lp: {
