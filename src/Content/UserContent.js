@@ -60,7 +60,7 @@ const ContenidoAbout2 = {
           lip: "Restaurant APP",
           lis: "UTEL UNIVERSITY",
         },
-        li9: { lip: "CRUD aplication", lis: "UTEL" },
+        li9: { lip: "CRUD aplication", lis: "UTEL UNIVERSITY" },
         li10: {
           lip: "Landing Pages",
           lis: "UTEL UNIVERSITY",
